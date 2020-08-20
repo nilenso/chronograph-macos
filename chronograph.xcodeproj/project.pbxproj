@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41470B8C24F64F67009AF96B /* Cleanse in Frameworks */ = {isa = PBXBuildFile; productRef = 41470B8B24F64F67009AF96B /* Cleanse */; };
+		41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
+		41A86A7A24EE6BF5003EFC0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7924EE6BF5003EFC0F /* ContentView.swift */; };
+		41A86A7C24EE6BF5003EFC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */; };
+		41A86A7F24EE6BF5003EFC0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A7E24EE6BF5003EFC0F /* Preview Assets.xcassets */; };
+		41A86A8224EE6BF5003EFC0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A8024EE6BF5003EFC0F /* Main.storyboard */; };
+		41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */; };
+		41A86A9924EE6BF6003EFC0F /* chronographUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41A86A8A24EE6BF5003EFC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A86A6C24EE6BF5003EFC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41A86A7324EE6BF5003EFC0F;
+			remoteInfo = chronograph;
+		};
+		41A86A9524EE6BF6003EFC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41A86A6C24EE6BF5003EFC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41A86A7324EE6BF5003EFC0F;
+			remoteInfo = chronograph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41A86A7424EE6BF5003EFC0F /* chronograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chronograph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41A86A7924EE6BF5003EFC0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41A86A7E24EE6BF5003EFC0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41A86A8124EE6BF5003EFC0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41A86A8324EE6BF5003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A86A8424EE6BF5003EFC0F /* chronograph.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = chronograph.entitlements; sourceTree = "<group>"; };
+		41A86A8924EE6BF5003EFC0F /* chronographTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chronographTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronographTests.swift; sourceTree = "<group>"; };
+		41A86A8F24EE6BF5003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A86A9424EE6BF6003EFC0F /* chronographUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chronographUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronographUITests.swift; sourceTree = "<group>"; };
+		41A86A9A24EE6BF6003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41A86A7124EE6BF5003EFC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41470B8C24F64F67009AF96B /* Cleanse in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A86A8624EE6BF5003EFC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A86A9124EE6BF6003EFC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41A86A6B24EE6BF5003EFC0F = {
+			isa = PBXGroup;
+			children = (
+				41A86A7624EE6BF5003EFC0F /* chronograph */,
+				41A86A8C24EE6BF5003EFC0F /* chronographTests */,
+				41A86A9724EE6BF6003EFC0F /* chronographUITests */,
+				41A86A7524EE6BF5003EFC0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41A86A7524EE6BF5003EFC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41A86A7424EE6BF5003EFC0F /* chronograph.app */,
+				41A86A8924EE6BF5003EFC0F /* chronographTests.xctest */,
+				41A86A9424EE6BF6003EFC0F /* chronographUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41A86A7624EE6BF5003EFC0F /* chronograph */ = {
+			isa = PBXGroup;
+			children = (
+				41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */,
+				41A86A7924EE6BF5003EFC0F /* ContentView.swift */,
+				41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */,
+				41A86A8024EE6BF5003EFC0F /* Main.storyboard */,
+				41A86A8324EE6BF5003EFC0F /* Info.plist */,
+				41A86A8424EE6BF5003EFC0F /* chronograph.entitlements */,
+				41A86A7D24EE6BF5003EFC0F /* Preview Content */,
+			);
+			path = chronograph;
+			sourceTree = "<group>";
+		};
+		41A86A7D24EE6BF5003EFC0F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				41A86A7E24EE6BF5003EFC0F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41A86A8C24EE6BF5003EFC0F /* chronographTests */ = {
+			isa = PBXGroup;
+			children = (
+				41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */,
+				41A86A8F24EE6BF5003EFC0F /* Info.plist */,
+			);
+			path = chronographTests;
+			sourceTree = "<group>";
+		};
+		41A86A9724EE6BF6003EFC0F /* chronographUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */,
+				41A86A9A24EE6BF6003EFC0F /* Info.plist */,
+			);
+			path = chronographUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41A86A7324EE6BF5003EFC0F /* chronograph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41A86A9D24EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronograph" */;
+			buildPhases = (
+				41A86A7024EE6BF5003EFC0F /* Sources */,
+				41A86A7124EE6BF5003EFC0F /* Frameworks */,
+				41A86A7224EE6BF5003EFC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chronograph;
+			packageProductDependencies = (
+				41470B8B24F64F67009AF96B /* Cleanse */,
+			);
+			productName = chronograph;
+			productReference = 41A86A7424EE6BF5003EFC0F /* chronograph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41A86A8824EE6BF5003EFC0F /* chronographTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41A86AA024EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographTests" */;
+			buildPhases = (
+				41A86A8524EE6BF5003EFC0F /* Sources */,
+				41A86A8624EE6BF5003EFC0F /* Frameworks */,
+				41A86A8724EE6BF5003EFC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41A86A8B24EE6BF5003EFC0F /* PBXTargetDependency */,
+			);
+			name = chronographTests;
+			productName = chronographTests;
+			productReference = 41A86A8924EE6BF5003EFC0F /* chronographTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41A86A9324EE6BF6003EFC0F /* chronographUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41A86AA324EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographUITests" */;
+			buildPhases = (
+				41A86A9024EE6BF6003EFC0F /* Sources */,
+				41A86A9124EE6BF6003EFC0F /* Frameworks */,
+				41A86A9224EE6BF6003EFC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41A86A9624EE6BF6003EFC0F /* PBXTargetDependency */,
+			);
+			name = chronographUITests;
+			productName = chronographUITests;
+			productReference = 41A86A9424EE6BF6003EFC0F /* chronographUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41A86A6C24EE6BF5003EFC0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = nilenso;
+				TargetAttributes = {
+					41A86A7324EE6BF5003EFC0F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					41A86A8824EE6BF5003EFC0F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 41A86A7324EE6BF5003EFC0F;
+					};
+					41A86A9324EE6BF6003EFC0F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 41A86A7324EE6BF5003EFC0F;
+					};
+				};
+			};
+			buildConfigurationList = 41A86A6F24EE6BF5003EFC0F /* Build configuration list for PBXProject "chronograph" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41A86A6B24EE6BF5003EFC0F;
+			packageReferences = (
+				41470B8A24F64F67009AF96B /* XCRemoteSwiftPackageReference "Cleanse" */,
+			);
+			productRefGroup = 41A86A7524EE6BF5003EFC0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41A86A7324EE6BF5003EFC0F /* chronograph */,
+				41A86A8824EE6BF5003EFC0F /* chronographTests */,
+				41A86A9324EE6BF6003EFC0F /* chronographUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41A86A7224EE6BF5003EFC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A86A8224EE6BF5003EFC0F /* Main.storyboard in Resources */,
+				41A86A7F24EE6BF5003EFC0F /* Preview Assets.xcassets in Resources */,
+				41A86A7C24EE6BF5003EFC0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A86A8724EE6BF5003EFC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A86A9224EE6BF6003EFC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41A86A7024EE6BF5003EFC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A86A7A24EE6BF5003EFC0F /* ContentView.swift in Sources */,
+				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A86A8524EE6BF5003EFC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A86A9024EE6BF6003EFC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A86A9924EE6BF6003EFC0F /* chronographUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41A86A8B24EE6BF5003EFC0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41A86A7324EE6BF5003EFC0F /* chronograph */;
+			targetProxy = 41A86A8A24EE6BF5003EFC0F /* PBXContainerItemProxy */;
+		};
+		41A86A9624EE6BF6003EFC0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41A86A7324EE6BF5003EFC0F /* chronograph */;
+			targetProxy = 41A86A9524EE6BF6003EFC0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41A86A8024EE6BF5003EFC0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41A86A8124EE6BF5003EFC0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41A86A9B24EE6BF6003EFC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41A86A9C24EE6BF6003EFC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		41A86A9E24EE6BF6003EFC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = chronograph/chronograph.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"chronograph/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = chronograph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronograph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		41A86A9F24EE6BF6003EFC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = chronograph/chronograph.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"chronograph/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = chronograph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronograph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		41A86AA124EE6BF6003EFC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = chronographTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronographTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chronograph.app/Contents/MacOS/chronograph";
+			};
+			name = Debug;
+		};
+		41A86AA224EE6BF6003EFC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = chronographTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronographTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chronograph.app/Contents/MacOS/chronograph";
+			};
+			name = Release;
+		};
+		41A86AA424EE6BF6003EFC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = chronographUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronographUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = chronograph;
+			};
+			name = Debug;
+		};
+		41A86AA524EE6BF6003EFC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = chronographUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronographUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = chronograph;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41A86A6F24EE6BF5003EFC0F /* Build configuration list for PBXProject "chronograph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41A86A9B24EE6BF6003EFC0F /* Debug */,
+				41A86A9C24EE6BF6003EFC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41A86A9D24EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronograph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41A86A9E24EE6BF6003EFC0F /* Debug */,
+				41A86A9F24EE6BF6003EFC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41A86AA024EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41A86AA124EE6BF6003EFC0F /* Debug */,
+				41A86AA224EE6BF6003EFC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41A86AA324EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41A86AA424EE6BF6003EFC0F /* Debug */,
+				41A86AA524EE6BF6003EFC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41470B8A24F64F67009AF96B /* XCRemoteSwiftPackageReference "Cleanse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/square/Cleanse";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41470B8B24F64F67009AF96B /* Cleanse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41470B8A24F64F67009AF96B /* XCRemoteSwiftPackageReference "Cleanse" */;
+			productName = Cleanse;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 41A86A6C24EE6BF5003EFC0F /* Project object */;
+}
