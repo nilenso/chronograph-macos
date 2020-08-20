@@ -1,0 +1,22 @@
+name: Tests and Build
+
+on: [push]
+
+jobs:
+  test_and_build:
+    name: Test and Build Application
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        project: [chronograph.xcodeproj]
+        scheme: [chronograph]
+        destination: [ "platform=macOS,arch=x86_64" ]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Run Tests
+      run: |
+        xcodebuild -project ${{matrix.project}} -scheme ${{matrix.scheme}} -destination ${{matrix.destination}} clean test
+    - name: Build Application
+      run: |
+        xcodebuild -project ${{matrix.project}} -scheme ${{matrix.scheme}} -destination ${{matrix.destination}} clean build
