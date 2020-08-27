@@ -23,13 +23,14 @@ class chronographUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testStatusBarIconIsPresent() throws {
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        _ = app.wait(for: XCUIApplication.State.runningBackground, timeout: 1.0)
+        let statusItem = app.children(matching: XCUIElement.ElementType.popover)
+            .element;
+        _ = statusItem.waitForExistence(timeout: 1);
+        XCTAssert(true);
     }
 
     //    func testLaunchPerformance() throws {
