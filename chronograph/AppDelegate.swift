@@ -12,13 +12,24 @@ import SwiftUI
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var app: Application<ContentView>!;
+    var app: Application!;
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let contentView = ContentView();
+        let viewController = NSHostingController( rootView: ContentView());
         
-        self.app = Application(view: contentView, height: 400, width: 500);
-        app.start();
+        let statusBarIcon = NSStatusBar.system.statusItem(
+            withLength: CGFloat(NSStatusItem.variableLength)
+        );
+        
+        let container = NSPopover();
+        
+        self.app = Application(container: container, statusBarIcon: statusBarIcon);
+        app.setupStatusBarIcon(title: "TT");
+        app.setupContainer(
+            viewController: viewController,
+            height: 500,
+            width: 400
+        );
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

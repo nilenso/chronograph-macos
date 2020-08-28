@@ -6,47 +6,30 @@
 //  Copyright © 2020 nilenso. All rights reserved.
 //
 
+import Cleanse
 import SwiftUI
 
-class Application<V: View> {
-    let view: V;
-    let height: Int;
-    let width: Int;
-    
+class Application {
     var container: NSPopover!;
     var statusBarIcon: NSStatusItem!;
     
-    init(view: V, height: Int, width: Int) {
-        self.view = view;
-        self.height = height;
-        self.width = width;
+    init(container: NSPopover, statusBarIcon: NSStatusItem) {
+        self.container = container;
+        self.statusBarIcon = statusBarIcon;
     }
     
-    func start() {
-        createContainer()
-        createStatusBarIcon()
-    }
-    
-    private func createContainer() {
-        self.container = NSPopover();
-        self.container.contentSize = NSSize(width: 400, height: 500);
+    func setupContainer<V: View>(viewController: NSHostingController<V>, height: Int, width: Int) {
+        self.container.contentSize = NSSize(width: width, height: height);
         self.container.behavior = .transient;
-        self.container.contentViewController = NSHostingController(
-            rootView: self.view
-        );
+        self.container.contentViewController = viewController;
     }
     
-    private func createStatusBarIcon() {
-        self.statusBarIcon = NSStatusBar.system.statusItem(
-            withLength: CGFloat(NSStatusItem.variableLength)
-        );
-        
+    func setupStatusBarIcon(title: String) {
         if let button = self.statusBarIcon.button {
             button.target = self;
-            button.title = "TT";
+            button.title = title;
             button.action = #selector(toggleContainer(_:));
         }
-        
     }
     
     @objc private func toggleContainer(_ sender: AnyObject?) {
@@ -59,7 +42,7 @@ class Application<V: View> {
         }
     }
     
-    private func showContainer(button: NSButton) {
+    func showContainer(button: NSButton) {
         self.container.show(
             relativeTo: button.bounds,
             of: button,
@@ -73,7 +56,18 @@ class Application<V: View> {
         
     }
     
-    private func hideContainer(_ sender: AnyObject?) {
+    func hideContainer(_ sender: AnyObject?) {
         self.container.performClose(sender);
+    }
+}
+
+struct Component: Cleanse.RootComponent {
+    typealias Root = Application;
+    
+    static func configureRoot(binder bind: ReceiptBinder<Root>) -> BindingReceipt<Root> {
+        return bind.to(factory: Application.init)
+    }
+    
+    static func configure(binder: Binder<Unscoped>) {
     }
 }
