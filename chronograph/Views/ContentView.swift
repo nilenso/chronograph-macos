@@ -9,9 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var userStore = UserStore();
+    
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        return VStack {
+            if userStore.currentUser != nil {
+                Text("Hello!")
+            } else {
+                LoginView()
+            }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

@@ -5,13 +5,11 @@
 //  Created by Govind krishna Joshi on 27/08/20.
 //  Copyright © 2020 nilenso. All rights reserved.
 //
-
-import Cleanse
 import SwiftUI
 
 class Application {
     var container: NSPopover!;
-    var statusBarIcon: NSStatusItem!;
+    var statusBarIcon: NSStatusItem!;   
     
     init(container: NSPopover, statusBarIcon: NSStatusItem) {
         self.container = container;
@@ -58,16 +56,5 @@ class Application {
     
     func hideContainer(_ sender: AnyObject?) {
         self.container.performClose(sender);
-    }
-}
-
-struct Component: Cleanse.RootComponent {
-    typealias Root = Application;
-    
-    static func configureRoot(binder bind: ReceiptBinder<Root>) -> BindingReceipt<Root> {
-        return bind.to(factory: Application.init)
-    }
-    
-    static func configure(binder: Binder<Unscoped>) {
     }
 }
