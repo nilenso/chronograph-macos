@@ -20,7 +20,7 @@ class ApplicationTest: XCTestCase {
             withLength: CGFloat(NSStatusItem.variableLength)
         );
         
-        application = Application(container: container, statusBarIcon: statusBarIcon);
+        application = Application(viewController: ViewController(), statusBarIcon: statusBarIcon);
     }
     
     override func tearDown() {
@@ -28,11 +28,10 @@ class ApplicationTest: XCTestCase {
     }
     
     func testSetupContainer() throws {
-        let viewController =  NSHostingController( rootView: ContentView());
+        let viewController =  NSHostingController(rootView: Text("Helllo"));
         let width = 10;
         let height = 15;
         application.setupContainer(
-            viewController: viewController,
             height: height,
             width: width
         );

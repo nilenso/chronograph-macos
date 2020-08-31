@@ -9,16 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var userStore = UserStore();
+    @Environment(\.store) var store: Store;
+    
+    @State var currentUser: User! = nil
     
     var body: some View {
         return VStack {
-            if userStore.currentUser != nil {
-                Text("Hello!")
+            if currentUser != nil {
+                Text("Hello \(currentUser?.name ?? "Default")!")
             } else {
                 LoginView()
             }
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onReceive(store.currentUser()) { user in
+            self.currentUser = user
+        }
     }
 }
 
@@ -27,3 +32,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

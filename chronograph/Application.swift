@@ -8,18 +8,19 @@
 import SwiftUI
 
 class Application {
+    var statusBarIcon: NSStatusItem!;
     var container: NSPopover!;
-    var statusBarIcon: NSStatusItem!;   
     
-    init(container: NSPopover, statusBarIcon: NSStatusItem) {
-        self.container = container;
+    init( statusBarIcon: NSStatusItem) {
         self.statusBarIcon = statusBarIcon;
     }
     
     func setupContainer<V: View>(viewController: NSHostingController<V>, height: Int, width: Int) {
+        self.container = NSPopover();
         self.container.contentSize = NSSize(width: width, height: height);
         self.container.behavior = .transient;
         self.container.contentViewController = viewController;
+        showContainer(button: self.statusBarIcon.button!)
     }
     
     func setupStatusBarIcon(title: String) {
