@@ -13,7 +13,7 @@
 		412EB6A524F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		412EB6A724F95FC90083A9EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
 		412EB6A824F95FC90083A9EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
-		412EB6B124FD0D2C0083A9EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6B024FD0D2C0083A9EC /* ViewController.swift */; };
+		412EB6B124FD0D2C0083A9EC /* PresentationContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6B024FD0D2C0083A9EC /* PresentationContextProvider.swift */; };
 		41470B9A24F7871C009AF96B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41470B9924F7871C009AF96B /* main.swift */; };
 		41470B9C24F78CBB009AF96B /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */; };
 		41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
@@ -22,8 +22,8 @@
 		41A86A7F24EE6BF5003EFC0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A7E24EE6BF5003EFC0F /* Preview Assets.xcassets */; };
 		41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */; };
 		41A86A9924EE6BF6003EFC0F /* chronographUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */; };
-		41E3FEF0250035BF003E586C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6B024FD0D2C0083A9EC /* ViewController.swift */; };
-		41E3FEF1250035BF003E586C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6B024FD0D2C0083A9EC /* ViewController.swift */; };
+		41E3FEF0250035BF003E586C /* PresentationContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6B024FD0D2C0083A9EC /* PresentationContextProvider.swift */; };
+		41E3FEF1250035BF003E586C /* PresentationContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6B024FD0D2C0083A9EC /* PresentationContextProvider.swift */; };
 		41E3FEF2250035C9003E586C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		41E3FEF4250035D2003E586C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7924EE6BF5003EFC0F /* ContentView.swift */; };
 		41E3FEF5250035D2003E586C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7924EE6BF5003EFC0F /* ContentView.swift */; };
@@ -60,7 +60,7 @@
 		412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTest.swift; sourceTree = "<group>"; };
 		412EB6A324F94BB20083A9EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		412EB6A624F95FC90083A9EC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		412EB6B024FD0D2C0083A9EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		412EB6B024FD0D2C0083A9EC /* PresentationContextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContextProvider.swift; sourceTree = "<group>"; };
 		41470B9924F7871C009AF96B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		41A86A7424EE6BF5003EFC0F /* chronograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chronograph.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +122,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4133D03225069F860005603F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41A86A6B24EE6BF5003EFC0F = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +137,7 @@
 				41A86A8C24EE6BF5003EFC0F /* chronographTests */,
 				41A86A9724EE6BF6003EFC0F /* chronographUITests */,
 				41A86A7524EE6BF5003EFC0F /* Products */,
+				4133D03225069F860005603F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +162,7 @@
 				41A86A8324EE6BF5003EFC0F /* Info.plist */,
 				41A86A8424EE6BF5003EFC0F /* chronograph.entitlements */,
 				41A86A7D24EE6BF5003EFC0F /* Preview Content */,
-				412EB6B024FD0D2C0083A9EC /* ViewController.swift */,
+				412EB6B024FD0D2C0083A9EC /* PresentationContextProvider.swift */,
 				41E3FEF92500BE60003E586C /* AppState.swift */,
 				41E3FEFD2500BE9D003E586C /* Store.swift */,
 			);
@@ -323,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				412EB6B124FD0D2C0083A9EC /* ViewController.swift in Sources */,
+				412EB6B124FD0D2C0083A9EC /* PresentationContextProvider.swift in Sources */,
 				41E3FEFA2500BE60003E586C /* AppState.swift in Sources */,
 				412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */,
 				41A86A7A24EE6BF5003EFC0F /* ContentView.swift in Sources */,
@@ -349,7 +357,7 @@
 				41E3FEFF2500BE9D003E586C /* Store.swift in Sources */,
 				412EB6A524F94BB20083A9EC /* User.swift in Sources */,
 				41E3FEF4250035D2003E586C /* ContentView.swift in Sources */,
-				41E3FEF0250035BF003E586C /* ViewController.swift in Sources */,
+				41E3FEF0250035BF003E586C /* PresentationContextProvider.swift in Sources */,
 				41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +370,7 @@
 				41E3FEF8250035D8003E586C /* Application.swift in Sources */,
 				41E3FEFC2500BE60003E586C /* AppState.swift in Sources */,
 				41E3FF002500BE9D003E586C /* Store.swift in Sources */,
-				41E3FEF1250035BF003E586C /* ViewController.swift in Sources */,
+				41E3FEF1250035BF003E586C /* PresentationContextProvider.swift in Sources */,
 				41E3FEF5250035D2003E586C /* ContentView.swift in Sources */,
 				41A86A9924EE6BF6003EFC0F /* chronographUITests.swift in Sources */,
 				41E3FEF2250035C9003E586C /* User.swift in Sources */,
