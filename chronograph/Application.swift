@@ -5,57 +5,88 @@
 //  Created by Govind krishna Joshi on 27/08/20.
 //  Copyright © 2020 nilenso. All rights reserved.
 //
+import Cleanse
 import SwiftUI
 
 class Application {
-    var statusBarIcon: NSStatusItem!;
-    var container: NSPopover!;
-    
-    init( statusBarIcon: NSStatusItem) {
-        self.statusBarIcon = statusBarIcon;
+    let statusItem: NSStatusItem;
+    let popover: NSPopover;
+    let viewController: ViewController;
+    let store: Store;
+
+    init(statusItem: NSStatusItem, popover: NSPopover, viewController: ViewController, store: Store) {
+        self.statusItem = statusItem;
+        self.popover = popover;
+        self.viewController = viewController;
+        self.store = store;
     }
     
-    func setupContainer<V: View>(viewController: NSHostingController<V>, height: Int, width: Int) {
-        self.container = NSPopover();
-        self.container.contentSize = NSSize(width: width, height: height);
-        self.container.behavior = .transient;
-        self.container.contentViewController = viewController;
-        showContainer(button: self.statusBarIcon.button!)
-    }
-    
-    func setupStatusBarIcon(title: String) {
-        if let button = self.statusBarIcon.button {
+    func start(title: String) {
+        self.popover.contentViewController = viewController;
+        if let button = self.statusItem.button {
             button.target = self;
             button.title = title;
             button.action = #selector(toggleContainer(_:));
         }
+        self.store.presentationContext = viewController;
+        showContainer();
     }
-    
+
     @objc private func toggleContainer(_ sender: AnyObject?) {
-        if let button = self.statusBarIcon.button {
-            if self.container.isShown {
-                self.container.performClose(sender);
-            } else {
-                showContainer(button: button)
-            }
+        if self.popover.isShown {
+            self.popover.performClose(sender);
+        } else {
+            showContainer()
         }
     }
     
-    func showContainer(button: NSButton) {
-        self.container.show(
-            relativeTo: button.bounds,
-            of: button,
-            preferredEdge: NSRectEdge.minY
-        );
-        
-        self.container.contentViewController?
-            .view
-            .window?
-            .becomeKey();
-        
+    func showContainer() {
+        if let button = self.statusItem.button {
+            self.popover.show(
+                relativeTo: button.bounds,
+                of: button,
+                preferredEdge: NSRectEdge.minY
+            );
+            
+            self.popover.contentViewController?
+                .view
+                .window?
+                .becomeKey();
+        }
     }
     
     func hideContainer(_ sender: AnyObject?) {
-        self.container.performClose(sender);
+        self.popover.performClose(sender);
+    }
+    
+    struct Component: Cleanse.RootComponent {
+        typealias Root = Application;
+        
+        static func configure(binder: Binder<Singleton>) {
+            binder.bind(NSStatusItem.self)
+                .sharedInScope()
+                .to { () -> NSStatusItem in
+                    NSStatusBar.system.statusItem(
+                        withLength: CGFloat(NSStatusItem.variableLength)
+                    )
+            }
+            
+            binder.bind(NSPopover.self)
+                .sharedInScope()
+                .to { () -> NSPopover in
+                    let popover = NSPopover();
+                    popover.contentSize = NSSize(width: 400, height: 500);
+                    popover.behavior = .applicationDefined
+                    return popover;
+            }
+            
+            binder.include(module: ViewController.Module.self)
+            
+            binder.include(module: Store.Module.self)
+        }
+        
+        static func configureRoot(binder bind: ReceiptBinder<Application>) -> BindingReceipt<Application> {
+            return bind.to(factory: Application.init)
+        }
     }
 }

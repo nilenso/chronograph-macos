@@ -6,30 +6,43 @@
 //  Copyright © 2020 nilenso. All rights reserved.
 //
 
+import Cleanse
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.store) var store: Store;
-    
-    @State var currentUser: User! = nil
+    let store: Store;
     
     var body: some View {
-        return VStack {
-            if currentUser != nil {
-                Text("Hello \(currentUser?.name ?? "Default")!")
-            } else {
-                LoginView()
-            }
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
-        .onReceive(store.currentUser()) { user in
-            self.currentUser = user
+        return HomeView()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .environment(\.store, store);
+    }
+    
+    struct Module: Cleanse.Module {
+        static func configure(binder: Binder<Singleton>) {
+            binder.bind(ContentView.self).to(factory: ContentView.init)
+            binder.include(module: Store.Module.self);
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: Store(appState: AppState()))
     }
+   
 }
 
+
+struct StoreKey: EnvironmentKey {
+    typealias Value = Store;
+    
+    static var defaultValue: Store = Store(appState: AppState());
+}
+
+extension EnvironmentValues {
+    var store: Store {
+        get { self[StoreKey.self] }
+        set { self[StoreKey.self] = newValue }
+    }
+}

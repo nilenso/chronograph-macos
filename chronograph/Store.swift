@@ -5,13 +5,14 @@
 //  Created by Govind krishna Joshi on 03/09/20.
 //  Copyright © 2020 nilenso. All rights reserved.
 //
-
+import Alamofire
+import Cleanse
 import Combine
 import AuthenticationServices
 
 class Store: ObservableObject {
     @Published private var appState: AppState;
-    var contextProvider = PresentationContextProvider()
+    weak var presentationContext: ViewController!;
     
     let SCHEME="chronograph";
     
@@ -33,7 +34,7 @@ class Store: ObservableObject {
         let session = ASWebAuthenticationSession(url: authURL, callbackURLScheme: scheme)
         { callbackURL, error in
             // TODO: Handle the error
-            guard error == nil, let callbackURL = callbackURL else { return }
+            guard error == nil, let callbackURL = callbackURL else { print(error); return }
             
             print("Making reqeust");
             let queryItems = URLComponents(string: callbackURL.absoluteString)?.queryItems
@@ -42,8 +43,22 @@ class Store: ObservableObject {
             print(accessToken);
         }
         
-        session.presentationContextProvider = self.contextProvider
+        session.presentationContextProvider = self.presentationContext;
         
         session.start()
+    }
+     
+    struct Module: Cleanse.Module {
+        static func configure(binder: Binder<Singleton>) {
+            binder.bind(Store.self)
+                .sharedInScope()
+                .to(factory: Store.init)
+            
+            binder.include(module: AppState.Module.self)
+        }
+    }
+    
+    struct PresentationContextProvider: Tag {
+        typealias Element = ASWebAuthenticationPresentationContextProviding
     }
 }
