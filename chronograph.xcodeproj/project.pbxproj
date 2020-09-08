@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262541D12507728D00A71B26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 262541D02507728D00A71B26 /* Alamofire */; };
 		412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
 		412EB68C24F7C19D0083A9EC /* ApplicationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */; };
 		412EB6A424F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
@@ -91,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4133D0372506A5700005603F /* Cleanse in Frameworks */,
+				262541D12507728D00A71B26 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,17 +163,17 @@
 		41A86A7624EE6BF5003EFC0F /* chronograph */ = {
 			isa = PBXGroup;
 			children = (
-				412EB6A224F94B9C0083A9EC /* Models */,
-				412EB69524F919F00083A9EC /* Views */,
-				412EB68924F7BE3C0083A9EC /* Application.swift */,
-				41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */,
-				41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */,
-				41A86A8324EE6BF5003EFC0F /* Info.plist */,
 				41A86A8424EE6BF5003EFC0F /* chronograph.entitlements */,
-				41A86A7D24EE6BF5003EFC0F /* Preview Content */,
+				41A86A8324EE6BF5003EFC0F /* Info.plist */,
+				41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */,
+				412EB68924F7BE3C0083A9EC /* Application.swift */,
 				41E3FEF92500BE60003E586C /* AppState.swift */,
 				41E3FEFD2500BE9D003E586C /* Store.swift */,
 				4133D0382506AC320005603F /* ViewController.swift */,
+				41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */,
+				412EB6A224F94B9C0083A9EC /* Models */,
+				41A86A7D24EE6BF5003EFC0F /* Preview Content */,
+				412EB69524F919F00083A9EC /* Views */,
 			);
 			path = chronograph;
 			sourceTree = "<group>";
@@ -222,6 +224,7 @@
 			name = chronograph;
 			packageProductDependencies = (
 				4133D0362506A5700005603F /* Cleanse */,
+				262541D02507728D00A71B26 /* Alamofire */,
 			);
 			productName = chronograph;
 			productReference = 41A86A7424EE6BF5003EFC0F /* chronograph.app */;
@@ -297,6 +300,7 @@
 			mainGroup = 41A86A6B24EE6BF5003EFC0F;
 			packageReferences = (
 				4133D0352506A5700005603F /* XCRemoteSwiftPackageReference "Cleanse" */,
+				262541CF2507728D00A71B26 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 41A86A7524EE6BF5003EFC0F /* Products */;
 			projectDirPath = "";
@@ -682,17 +686,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		262541CF2507728D00A71B26 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
 		4133D0352506A5700005603F /* XCRemoteSwiftPackageReference "Cleanse" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/square/Cleanse";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 4.2.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		262541D02507728D00A71B26 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 262541CF2507728D00A71B26 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		4133D0362506A5700005603F /* Cleanse */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4133D0352506A5700005603F /* XCRemoteSwiftPackageReference "Cleanse" */;

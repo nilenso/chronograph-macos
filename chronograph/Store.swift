@@ -41,6 +41,11 @@ class Store: ObservableObject {
             let accessToken = queryItems?.filter({ $0.name == "access-token" }).first?.value
         
             print(accessToken);
+            
+            let headers: HTTPHeaders = [.authorization(bearerToken: accessToken!)]
+            AF.request("http://localhost:8000/api/users/me", headers: headers).response { response in
+                debugPrint(response)
+            }
         }
         
         session.presentationContextProvider = self.presentationContext;
