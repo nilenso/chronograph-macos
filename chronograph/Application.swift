@@ -76,7 +76,7 @@ class Application {
                 .to { () -> NSPopover in
                     let popover = NSPopover();
                     popover.contentSize = NSSize(width: 400, height: 500);
-                    popover.behavior = .applicationDefined
+                    popover.behavior = .transient
                     return popover;
             }
             
