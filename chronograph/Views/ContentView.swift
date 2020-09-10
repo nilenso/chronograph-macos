@@ -5,8 +5,6 @@
 //  Created by Govind krishna Joshi on 20/08/20.
 //  Copyright © 2020 nilenso. All rights reserved.
 //
-
-import Cleanse
 import SwiftUI
 
 struct ContentView: View {
@@ -16,13 +14,6 @@ struct ContentView: View {
         return HomeView()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .environment(\.store, store);
-    }
-    
-    struct Module: Cleanse.Module {
-        static func configure(binder: Binder<Singleton>) {
-            binder.bind(ContentView.self).to(factory: ContentView.init)
-            binder.include(module: Store.Module.self);
-        }
     }
 }
 

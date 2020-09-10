@@ -3,17 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262541D12507728D00A71B26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 262541D02507728D00A71B26 /* Alamofire */; };
 		412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
 		412EB6A424F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		412EB6A524F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		412EB6A724F95FC90083A9EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
 		412EB6A824F95FC90083A9EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
-		4133D0372506A5700005603F /* Cleanse in Frameworks */ = {isa = PBXBuildFile; productRef = 4133D0362506A5700005603F /* Cleanse */; };
 		4133D0392506AC320005603F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133D0382506AC320005603F /* ViewController.swift */; };
 		4133D03A2506AC320005603F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133D0382506AC320005603F /* ViewController.swift */; };
 		4133D03B2506AC320005603F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133D0382506AC320005603F /* ViewController.swift */; };
@@ -46,6 +44,9 @@
 		41E3FEFE2500BE9D003E586C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEFD2500BE9D003E586C /* Store.swift */; };
 		41E3FEFF2500BE9D003E586C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEFD2500BE9D003E586C /* Store.swift */; };
 		41E3FF002500BE9D003E586C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEFD2500BE9D003E586C /* Store.swift */; };
+		9363A395190C2DDC61F09964 /* Pods_chronograph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA2DF3A16155F260395B918 /* Pods_chronograph.framework */; };
+		9FA84C13F713B67C5FC87746 /* Pods_chronographTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBE441480D7894C5A8094A2 /* Pods_chronographTests.framework */; };
+		D5B87DA77E53C418F29ECBA8 /* Pods_chronograph_chronographUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85421D53CCFEEA89C58148FA /* Pods_chronograph_chronographUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronographTests.debug.xcconfig"; path = "Target Support Files/Pods-chronographTests/Pods-chronographTests.debug.xcconfig"; sourceTree = "<group>"; };
 		412EB68924F7BE3C0083A9EC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		412EB6A324F94BB20083A9EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		412EB6A624F95FC90083A9EC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 		41A86A9A24EE6BF6003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E3FEF92500BE60003E586C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		41E3FEFD2500BE9D003E586C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4636C377E9C3685960E1DB81 /* Pods-chronograph-chronographUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph-chronographUITests.debug.xcconfig"; path = "Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DBE441480D7894C5A8094A2 /* Pods_chronographTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chronographTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EA4802E146AB12A2C2B9C5 /* Pods-chronograph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph.debug.xcconfig"; path = "Target Support Files/Pods-chronograph/Pods-chronograph.debug.xcconfig"; sourceTree = "<group>"; };
+		85421D53CCFEEA89C58148FA /* Pods_chronograph_chronographUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chronograph_chronographUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91AA211D6C17E72FE7C21386 /* Pods-chronographTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronographTests.release.xcconfig"; path = "Target Support Files/Pods-chronographTests/Pods-chronographTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3DA5CA9683FBEF8ECF9D23C /* Pods-chronograph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph.release.xcconfig"; path = "Target Support Files/Pods-chronograph/Pods-chronograph.release.xcconfig"; sourceTree = "<group>"; };
+		CCA2DF3A16155F260395B918 /* Pods_chronograph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chronograph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0622F1581C2861B2D85D1A4 /* Pods-chronograph-chronographUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph-chronographUITests.release.xcconfig"; path = "Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4133D0372506A5700005603F /* Cleanse in Frameworks */,
-				262541D12507728D00A71B26 /* Alamofire in Frameworks */,
+				9363A395190C2DDC61F09964 /* Pods_chronograph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA84C13F713B67C5FC87746 /* Pods_chronographTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B87DA77E53C418F29ECBA8 /* Pods_chronograph_chronographUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,13 +148,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4133D03225069F860005603F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		414F62F0250A04DF006D3D43 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +164,8 @@
 				41A86A8C24EE6BF5003EFC0F /* chronographTests */,
 				41A86A9724EE6BF6003EFC0F /* chronographUITests */,
 				41A86A7524EE6BF5003EFC0F /* Products */,
-				4133D03225069F860005603F /* Frameworks */,
+				53525D7FBE543821A3A4F9DF /* Pods */,
+				50ACFBB6A3EB309051C318DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +226,29 @@
 			path = chronographUITests;
 			sourceTree = "<group>";
 		};
+		50ACFBB6A3EB309051C318DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCA2DF3A16155F260395B918 /* Pods_chronograph.framework */,
+				85421D53CCFEEA89C58148FA /* Pods_chronograph_chronographUITests.framework */,
+				4DBE441480D7894C5A8094A2 /* Pods_chronographTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53525D7FBE543821A3A4F9DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79EA4802E146AB12A2C2B9C5 /* Pods-chronograph.debug.xcconfig */,
+				B3DA5CA9683FBEF8ECF9D23C /* Pods-chronograph.release.xcconfig */,
+				4636C377E9C3685960E1DB81 /* Pods-chronograph-chronographUITests.debug.xcconfig */,
+				D0622F1581C2861B2D85D1A4 /* Pods-chronograph-chronographUITests.release.xcconfig */,
+				22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */,
+				91AA211D6C17E72FE7C21386 /* Pods-chronographTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,19 +256,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A86A9D24EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronograph" */;
 			buildPhases = (
+				CC03D6DE178BB390ACBD2CEA /* [CP] Check Pods Manifest.lock */,
 				41A86A7024EE6BF5003EFC0F /* Sources */,
 				41A86A7124EE6BF5003EFC0F /* Frameworks */,
 				41A86A7224EE6BF5003EFC0F /* Resources */,
+				FEC71F3D6DECD6C72546AB45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = chronograph;
-			packageProductDependencies = (
-				4133D0362506A5700005603F /* Cleanse */,
-				262541D02507728D00A71B26 /* Alamofire */,
-			);
 			productName = chronograph;
 			productReference = 41A86A7424EE6BF5003EFC0F /* chronograph.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A86AA024EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographTests" */;
 			buildPhases = (
+				901795C52E0AE1E9FE222C01 /* [CP] Check Pods Manifest.lock */,
 				41A86A8524EE6BF5003EFC0F /* Sources */,
 				41A86A8624EE6BF5003EFC0F /* Frameworks */,
 				41A86A8724EE6BF5003EFC0F /* Resources */,
@@ -259,8 +286,6 @@
 				414F6308250A1305006D3D43 /* PBXTargetDependency */,
 			);
 			name = chronographTests;
-			packageProductDependencies = (
-			);
 			productName = chronographTests;
 			productReference = 41A86A8924EE6BF5003EFC0F /* chronographTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -269,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A86AA324EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographUITests" */;
 			buildPhases = (
+				EEAC11FAA06D01EB3BBEAFB5 /* [CP] Check Pods Manifest.lock */,
 				41A86A9024EE6BF6003EFC0F /* Sources */,
 				41A86A9124EE6BF6003EFC0F /* Frameworks */,
 				41A86A9224EE6BF6003EFC0F /* Resources */,
+				05D1ADBB0957216E582992BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,8 +306,6 @@
 				414F630A250A130F006D3D43 /* PBXTargetDependency */,
 			);
 			name = chronographUITests;
-			packageProductDependencies = (
-			);
 			productName = chronographUITests;
 			productReference = 41A86A9424EE6BF6003EFC0F /* chronographUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -317,10 +342,6 @@
 				Base,
 			);
 			mainGroup = 41A86A6B24EE6BF5003EFC0F;
-			packageReferences = (
-				4133D0352506A5700005603F /* XCRemoteSwiftPackageReference "Cleanse" */,
-				262541CF2507728D00A71B26 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			productRefGroup = 41A86A7524EE6BF5003EFC0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,6 +378,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D1ADBB0957216E582992BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		901795C52E0AE1E9FE222C01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chronographTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC03D6DE178BB390ACBD2CEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chronograph-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAC11FAA06D01EB3BBEAFB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chronograph-chronographUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC71F3D6DECD6C72546AB45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph/Pods-chronograph-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph/Pods-chronograph-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chronograph/Pods-chronograph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41A86A7024EE6BF5003EFC0F /* Sources */ = {
@@ -548,6 +672,7 @@
 		};
 		41A86A9E24EE6BF6003EFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79EA4802E146AB12A2C2B9C5 /* Pods-chronograph.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = chronograph/chronograph.entitlements;
@@ -569,6 +694,7 @@
 		};
 		41A86A9F24EE6BF6003EFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DA5CA9683FBEF8ECF9D23C /* Pods-chronograph.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = chronograph/chronograph.entitlements;
@@ -590,8 +716,8 @@
 		};
 		41A86AA124EE6BF6003EFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -611,8 +737,8 @@
 		};
 		41A86AA224EE6BF6003EFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91AA211D6C17E72FE7C21386 /* Pods-chronographTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -632,8 +758,8 @@
 		};
 		41A86AA424EE6BF6003EFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4636C377E9C3685960E1DB81 /* Pods-chronograph-chronographUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = chronographUITests/Info.plist;
@@ -651,8 +777,8 @@
 		};
 		41A86AA524EE6BF6003EFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0622F1581C2861B2D85D1A4 /* Pods-chronograph-chronographUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = chronographUITests/Info.plist;
@@ -708,38 +834,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		262541CF2507728D00A71B26 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 5.2.2;
-			};
-		};
-		4133D0352506A5700005603F /* XCRemoteSwiftPackageReference "Cleanse" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/square/Cleanse";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 4.2.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		262541D02507728D00A71B26 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 262541CF2507728D00A71B26 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		4133D0362506A5700005603F /* Cleanse */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4133D0352506A5700005603F /* XCRemoteSwiftPackageReference "Cleanse" */;
-			productName = Cleanse;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41A86A6C24EE6BF5003EFC0F /* Project object */;
 }

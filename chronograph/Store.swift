@@ -6,7 +6,6 @@
 //  Copyright © 2020 nilenso. All rights reserved.
 //
 import Alamofire
-import Cleanse
 import Combine
 import AuthenticationServices
 
@@ -42,16 +41,5 @@ class Store: ObservableObject {
         session.presentationContextProvider = self.presentationContext;
         
         session.start()
-        
-    }
-     
-    struct Module: Cleanse.Module {
-        static func configure(binder: Binder<Singleton>) {
-            binder.bind(Store.self)
-                .sharedInScope()
-                .to(factory: Store.init)
-            
-            binder.include(module: AppState.Module.self)
-        }
     }
 }

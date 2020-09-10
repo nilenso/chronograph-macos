@@ -9,15 +9,6 @@
           "revision": "becd9a729a37bdbef5bc39dc3c702b99f9e3d046",
           "version": "5.2.2"
         }
-      },
-      {
-        "package": "Cleanse",
-        "repositoryURL": "https://github.com/square/Cleanse",
-        "state": {
-          "branch": null,
-          "revision": "c854787f83d99527587b5387f04ccd0030e6133a",
-          "version": "4.2.6"
-        }
       }
     ]
   },
