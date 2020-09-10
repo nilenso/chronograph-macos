@@ -9,6 +9,7 @@ import Cleanse
 
 struct AppState {
     var currentUser: User!;
+    var accessToken: String!;
     
     struct Module: Cleanse.Module  {
         static func configure(binder: Binder<Singleton>) {

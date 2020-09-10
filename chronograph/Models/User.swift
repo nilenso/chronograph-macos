@@ -6,7 +6,12 @@
 //  Copyright © 2020 nilenso. All rights reserved.
 //
 
-struct User {
-    let id: Int;
-    let name: String;
+struct User: Codable {
+    var id: Int;
+    var name: String;
+    var accessToken: String?;
+    
+    private enum CodingKeys: String, CodingKey {
+        case id, name
+    }
 }

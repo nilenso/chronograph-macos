@@ -1,0 +1,25 @@
+//
+//  Users.swift
+//  chronograph
+//
+//  Created by Govind krishna Joshi on 10/09/20.
+//  Copyright © 2020 nilenso. All rights reserved.
+//
+import Alamofire
+import Combine
+
+class UserAPI {
+    let accessToken: String;
+    
+    init(accessToken: String) {
+        self.accessToken = accessToken;
+    }
+    
+    func me() -> AnyPublisher<User, AFError>{
+        let headers: HTTPHeaders = [.authorization(bearerToken: accessToken)]
+        
+        return AF.request("http://localhost:8000/api/users/me", headers: headers)
+            .publishDecodable(type: User.self)
+            .value()
+    }
+}
