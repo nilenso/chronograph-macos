@@ -24,7 +24,6 @@ struct ContentView_Previews: PreviewProvider {
    
 }
 
-
 struct StoreKey: EnvironmentKey {
     typealias Value = Store;
     

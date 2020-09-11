@@ -15,11 +15,11 @@ class UserAPI {
         self.accessToken = accessToken;
     }
     
-    func me() -> AnyPublisher<User, AFError>{
+    func me() -> AnyPublisher<Result<User, AFError>, Never>{
         let headers: HTTPHeaders = [.authorization(bearerToken: accessToken)]
         
         return AF.request("http://localhost:8000/api/users/me", headers: headers)
             .publishDecodable(type: User.self)
-            .value()
+            .result()
     }
 }

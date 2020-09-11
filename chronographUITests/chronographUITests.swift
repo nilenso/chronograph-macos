@@ -27,9 +27,4 @@ class chronographUITests: XCTestCase {
         XCTAssertTrue(statusBarIcon.waitForExistence(timeout: 5));
         XCTAssertEqual(statusBarIcon.title, "TT");
     }
-
-    func testPopoverExistsWhenStatusBarIconIsClicked() throws {
-        // let statusBarIcon = app.statusItems.element;
-        let popover = app.windows.element;
-    }
 }

@@ -17,7 +17,6 @@
 		4133D03B2506AC320005603F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133D0382506AC320005603F /* ViewController.swift */; };
 		41470B9A24F7871C009AF96B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41470B9924F7871C009AF96B /* main.swift */; };
 		41470B9C24F78CBB009AF96B /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */; };
-		414F62EF2509FD3B006D3D43 /* StoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62EE2509FD3B006D3D43 /* StoreTest.swift */; };
 		414F62F2250A0516006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
 		414F62F3250A0F76006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
 		414F62F4250A0F77006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
@@ -30,7 +29,6 @@
 		41A86A7A24EE6BF5003EFC0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7924EE6BF5003EFC0F /* ContentView.swift */; };
 		41A86A7C24EE6BF5003EFC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */; };
 		41A86A7F24EE6BF5003EFC0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A7E24EE6BF5003EFC0F /* Preview Assets.xcassets */; };
-		41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */; };
 		41A86A9924EE6BF6003EFC0F /* chronographUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */; };
 		41E3FEF2250035C9003E586C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		41E3FEF4250035D2003E586C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7924EE6BF5003EFC0F /* ContentView.swift */; };
@@ -74,7 +72,6 @@
 		4133D0382506AC320005603F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41470B9924F7871C009AF96B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
-		414F62EE2509FD3B006D3D43 /* StoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTest.swift; sourceTree = "<group>"; };
 		414F62F1250A0516006D3D43 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		417FE77B2506C57C001ABC9B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		41A86A7424EE6BF5003EFC0F /* chronograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chronograph.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +82,6 @@
 		41A86A8324EE6BF5003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A86A8424EE6BF5003EFC0F /* chronograph.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = chronograph.entitlements; sourceTree = "<group>"; };
 		41A86A8924EE6BF5003EFC0F /* chronographTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chronographTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronographTests.swift; sourceTree = "<group>"; };
 		41A86A8F24EE6BF5003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A86A9424EE6BF6003EFC0F /* chronographUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chronographUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronographUITests.swift; sourceTree = "<group>"; };
@@ -209,10 +205,8 @@
 		41A86A8C24EE6BF5003EFC0F /* chronographTests */ = {
 			isa = PBXGroup;
 			children = (
-				41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */,
 				41A86A8F24EE6BF5003EFC0F /* Info.plist */,
 				41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */,
-				414F62EE2509FD3B006D3D43 /* StoreTest.swift */,
 			);
 			path = chronographTests;
 			sourceTree = "<group>";
@@ -514,12 +508,10 @@
 				41470B9C24F78CBB009AF96B /* TestAppDelegate.swift in Sources */,
 				414F62F3250A0F76006D3D43 /* UserAPI.swift in Sources */,
 				41E3FEFF2500BE9D003E586C /* Store.swift in Sources */,
-				414F62EF2509FD3B006D3D43 /* StoreTest.swift in Sources */,
 				414F62F5250A0F7E006D3D43 /* AppDelegate.swift in Sources */,
 				412EB6A524F94BB20083A9EC /* User.swift in Sources */,
 				41E3FEF4250035D2003E586C /* ContentView.swift in Sources */,
 				417FE77D2506C57C001ABC9B /* HomeView.swift in Sources */,
-				41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
