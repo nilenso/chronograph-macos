@@ -19,7 +19,7 @@ class Application {
         );
         
         self.popover = NSPopover();
-        self.popover.contentSize = NSSize(width: 400, height: 500);
+        self.popover.contentSize = NSSize(width: Config.popoverWidth(), height: Config.popoverHeight());
         self.popover.behavior = .transient
         
         self.store = Store(appState: AppState());

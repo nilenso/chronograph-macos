@@ -15,8 +15,6 @@ class Store: ObservableObject {
     
     var cancellable: AnyCancellable!
     
-    let SCHEME="chronograph";
-    
     init(appState: AppState) {
         self.appState = appState;
     }
@@ -28,8 +26,7 @@ class Store: ObservableObject {
     }
     
     func loginUser() {
-        guard let authURL = URL(string: "http://localhost:8000?client-type=desktop") else { return }
-        let scheme = SCHEME;
+        let authURL = URL(string: Config.loginPageURL())!
         
         let subject = CurrentValueSubject<String?, Never>(nil);
         cancellable = subject
@@ -52,7 +49,7 @@ class Store: ObservableObject {
             }
         }
     
-        let session = ASWebAuthenticationSession(url: authURL, callbackURLScheme: scheme)
+        let session = ASWebAuthenticationSession(url: authURL, callbackURLScheme: Config.callbackURLScheme())
         { callbackURL, error in
             guard error == nil, let callbackURL = callbackURL else { return }
             

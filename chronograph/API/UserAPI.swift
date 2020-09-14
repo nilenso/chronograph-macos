@@ -18,7 +18,7 @@ class UserAPI {
     func me() -> AnyPublisher<Result<User, AFError>, Never>{
         let headers: HTTPHeaders = [.authorization(bearerToken: accessToken)]
         
-        return AF.request("http://localhost:8000/api/users/me", headers: headers)
+        return AF.request(Config.userInfoURL(), headers: headers)
             .publishDecodable(type: User.self)
             .result()
     }
