@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2614DBD8250F4FB500598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
 		2614DBDA250F56E000598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
+		2614DBDC250F573E00598B48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2614DBDB250F573E00598B48 /* README.md */; };
 		412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
 		412EB68C24F7C19D0083A9EC /* ApplicationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */; };
 		412EB6A424F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
@@ -68,6 +69,7 @@
 		22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronographTests.debug.xcconfig"; path = "Target Support Files/Pods-chronographTests/Pods-chronographTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2614DBD7250F4FB500598B48 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2614DBD9250F56E000598B48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2614DBDB250F573E00598B48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		412EB68924F7BE3C0083A9EC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTest.swift; sourceTree = "<group>"; };
 		412EB6A324F94BB20083A9EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		41A86A6B24EE6BF5003EFC0F = {
 			isa = PBXGroup;
 			children = (
+				2614DBDB250F573E00598B48 /* README.md */,
 				41470B9924F7871C009AF96B /* main.swift */,
 				41A86A7624EE6BF5003EFC0F /* chronograph */,
 				41A86A8C24EE6BF5003EFC0F /* chronographTests */,
@@ -356,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2614DBDC250F573E00598B48 /* README.md in Resources */,
 				41A86A7F24EE6BF5003EFC0F /* Preview Assets.xcassets in Resources */,
 				41A86A7C24EE6BF5003EFC0F /* Assets.xcassets in Resources */,
 			);

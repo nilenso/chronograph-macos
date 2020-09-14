@@ -6,5 +6,10 @@ Mac client for chronograph
 
 # Setup
 - clone this repository
-- open this as a project in xcode
+- install [cocoapods](https://cocoapods.org/)
+- run `pod install`
+- open `chronograph.xcworkspace` in XCode
 - Run the application (Cmd+r)
+
+# How to add configuration
+Configuration is exposed through the `Config` class and defined using build variables. Refer to [this](https://medium.com/@hassanahmedkhan/defining-your-own-settings-in-xcode-build-settings-1bd71539ea4f) to add a new configuration variable.
