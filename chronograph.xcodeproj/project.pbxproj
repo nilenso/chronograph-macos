@@ -10,8 +10,11 @@
 		2614DBD8250F4FB500598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
 		2614DBDA250F56E000598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
 		2614DBDC250F573E00598B48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2614DBDB250F573E00598B48 /* README.md */; };
+		2614DBDD250F592D00598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
+		2614DBDE250F592D00598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
+		2614DBDF250F593200598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
+		2614DBE0250F593200598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
 		412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
-		412EB68C24F7C19D0083A9EC /* ApplicationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */; };
 		412EB6A424F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		412EB6A524F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		412EB6A724F95FC90083A9EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
@@ -71,7 +74,6 @@
 		2614DBD9250F56E000598B48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2614DBDB250F573E00598B48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		412EB68924F7BE3C0083A9EC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTest.swift; sourceTree = "<group>"; };
 		412EB6A324F94BB20083A9EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		412EB6A624F95FC90083A9EC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4133D0382506AC320005603F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -212,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				41A86A8F24EE6BF5003EFC0F /* Info.plist */,
-				412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */,
 				41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */,
 			);
 			path = chronographTests;
@@ -513,9 +514,10 @@
 			files = (
 				41E3FEF7250035D8003E586C /* Application.swift in Sources */,
 				412EB6A824F95FC90083A9EC /* LoginView.swift in Sources */,
+				2614DBDD250F592D00598B48 /* ContentView.swift in Sources */,
 				41E3FEFB2500BE60003E586C /* AppState.swift in Sources */,
 				4133D03A2506AC320005603F /* ViewController.swift in Sources */,
-				412EB68C24F7C19D0083A9EC /* ApplicationTest.swift in Sources */,
+				2614DBDF250F593200598B48 /* Config.swift in Sources */,
 				41470B9C24F78CBB009AF96B /* TestAppDelegate.swift in Sources */,
 				414F62F3250A0F76006D3D43 /* UserAPI.swift in Sources */,
 				41E3FEFF2500BE9D003E586C /* Store.swift in Sources */,
@@ -530,9 +532,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				414F62F6250A0F7E006D3D43 /* AppDelegate.swift in Sources */,
+				2614DBDE250F592D00598B48 /* ContentView.swift in Sources */,
 				41E3FEF6250035D5003E586C /* LoginView.swift in Sources */,
 				41E3FEF8250035D8003E586C /* Application.swift in Sources */,
 				41E3FEFC2500BE60003E586C /* AppState.swift in Sources */,
+				2614DBE0250F593200598B48 /* Config.swift in Sources */,
 				414F62F4250A0F77006D3D43 /* UserAPI.swift in Sources */,
 				417FE77E2506C57C001ABC9B /* HomeView.swift in Sources */,
 				4133D03B2506AC320005603F /* ViewController.swift in Sources */,
