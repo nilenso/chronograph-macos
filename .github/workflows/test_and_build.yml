@@ -14,6 +14,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: Install dependencies
+      run: pod install
     - name: Run Tests
       run: |
         xcodebuild -workspace ${{matrix.workspace}} -scheme ${{matrix.scheme}} -destination ${{matrix.destination}} clean test
