@@ -8,15 +8,17 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        project: [chronograph.xcodeproj]
+        workspace: [chronograph.xcworkspace]
         scheme: [chronograph]
         destination: [ "platform=macOS,arch=x86_64" ]
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: Install dependencies
+      run: pod install
     - name: Run Tests
       run: |
-        xcodebuild -project ${{matrix.project}} -scheme ${{matrix.scheme}} -destination ${{matrix.destination}} clean test
+        xcodebuild -workspace ${{matrix.workspace}} -scheme ${{matrix.scheme}} -destination ${{matrix.destination}} clean test
     - name: Build Application
       run: |
-        xcodebuild -project ${{matrix.project}} -scheme ${{matrix.scheme}} -destination ${{matrix.destination}} clean build
+        xcodebuild -workspace ${{matrix.workspace}} -scheme ${{matrix.scheme}} -destination ${{matrix.destination}} clean build

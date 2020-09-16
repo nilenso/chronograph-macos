@@ -5,69 +5,65 @@
 //  Created by Govind krishna Joshi on 27/08/20.
 //  Copyright © 2020 nilenso. All rights reserved.
 //
-
-import Cleanse
 import SwiftUI
 
 class Application {
-    var container: NSPopover!;
-    var statusBarIcon: NSStatusItem!;
-    
-    init(container: NSPopover, statusBarIcon: NSStatusItem) {
-        self.container = container;
-        self.statusBarIcon = statusBarIcon;
+    let statusItem: NSStatusItem;
+    let popover: NSPopover;
+    let viewController: ViewController;
+    let store: Store;
+
+    init() {
+        self.statusItem = NSStatusBar.system.statusItem(
+            withLength: CGFloat(NSStatusItem.variableLength)
+        );
+        
+        self.popover = NSPopover();
+        self.popover.contentSize = NSSize(width: Config.popoverWidth(), height: Config.popoverHeight());
+        self.popover.behavior = .transient
+        
+        self.store = Store(appState: AppState());
+         
+        self.viewController = ViewController(
+            rootView: ContentView(store: self.store)
+        );
     }
     
-    func setupContainer<V: View>(viewController: NSHostingController<V>, height: Int, width: Int) {
-        self.container.contentSize = NSSize(width: width, height: height);
-        self.container.behavior = .transient;
-        self.container.contentViewController = viewController;
-    }
-    
-    func setupStatusBarIcon(title: String) {
-        if let button = self.statusBarIcon.button {
+    func start(title: String) {
+        self.popover.contentViewController = viewController;
+        if let button = self.statusItem.button {
             button.target = self;
             button.title = title;
             button.action = #selector(toggleContainer(_:));
         }
+        self.store.presentationContext = viewController;
+        showContainer();
     }
-    
+
     @objc private func toggleContainer(_ sender: AnyObject?) {
-        if let button = self.statusBarIcon.button {
-            if self.container.isShown {
-                self.container.performClose(sender);
-            } else {
-                showContainer(button: button)
-            }
+        if self.popover.isShown {
+            self.popover.performClose(sender);
+        } else {
+            showContainer()
         }
     }
     
-    func showContainer(button: NSButton) {
-        self.container.show(
-            relativeTo: button.bounds,
-            of: button,
-            preferredEdge: NSRectEdge.minY
-        );
-        
-        self.container.contentViewController?
-            .view
-            .window?
-            .becomeKey();
-        
+    func showContainer() {
+        if let button = self.statusItem.button {
+            self.popover.show(
+                relativeTo: button.bounds,
+                of: button,
+                preferredEdge: NSRectEdge.minY
+            );
+            
+            self.popover.contentViewController?
+                .view
+                .window?
+                .becomeKey();
+        }
     }
     
     func hideContainer(_ sender: AnyObject?) {
-        self.container.performClose(sender);
-    }
-}
-
-struct Component: Cleanse.RootComponent {
-    typealias Root = Application;
-    
-    static func configureRoot(binder bind: ReceiptBinder<Root>) -> BindingReceipt<Root> {
-        return bind.to(factory: Application.init)
-    }
-    
-    static func configure(binder: Binder<Unscoped>) {
+        self.popover.performClose(sender);
     }
 }

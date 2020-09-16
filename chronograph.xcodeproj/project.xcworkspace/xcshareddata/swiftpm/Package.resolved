@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "Cleanse",
-        "repositoryURL": "https://github.com/square/Cleanse",
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
         "state": {
           "branch": null,
-          "revision": "9076f26a15d6af25b60522d06b54cfae704ae301",
-          "version": "4.2.5"
+          "revision": "becd9a729a37bdbef5bc39dc3c702b99f9e3d046",
+          "version": "5.2.2"
         }
       }
     ]

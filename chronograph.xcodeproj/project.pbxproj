@@ -3,34 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2614DBD8250F4FB500598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
+		2614DBDA250F56E000598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
+		2614DBDC250F573E00598B48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2614DBDB250F573E00598B48 /* README.md */; };
+		2614DBDD250F592D00598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
+		2614DBDE250F592D00598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
+		2614DBDF250F593200598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
+		2614DBE0250F593200598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
 		412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
-		412EB68C24F7C19D0083A9EC /* ApplicationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */; };
-		41470B8C24F64F67009AF96B /* Cleanse in Frameworks */ = {isa = PBXBuildFile; productRef = 41470B8B24F64F67009AF96B /* Cleanse */; };
-		41470B8C24F64F67009AF96B /* Cleanse in Frameworks */ = {isa = PBXBuildFile; productRef = 41470B8B24F64F67009AF96B /* Cleanse */; };
+		412EB6A424F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
+		412EB6A524F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
+		412EB6A724F95FC90083A9EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
+		412EB6A824F95FC90083A9EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
+		4133D0392506AC320005603F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133D0382506AC320005603F /* ViewController.swift */; };
+		4133D03A2506AC320005603F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133D0382506AC320005603F /* ViewController.swift */; };
+		4133D03B2506AC320005603F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133D0382506AC320005603F /* ViewController.swift */; };
 		41470B9A24F7871C009AF96B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41470B9924F7871C009AF96B /* main.swift */; };
 		41470B9C24F78CBB009AF96B /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */; };
+		414F62F2250A0516006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
+		414F62F3250A0F76006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
+		414F62F4250A0F77006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
+		414F62F5250A0F7E006D3D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
+		414F62F6250A0F7E006D3D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
+		417FE77C2506C57C001ABC9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417FE77B2506C57C001ABC9B /* HomeView.swift */; };
+		417FE77D2506C57C001ABC9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417FE77B2506C57C001ABC9B /* HomeView.swift */; };
+		417FE77E2506C57C001ABC9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417FE77B2506C57C001ABC9B /* HomeView.swift */; };
 		41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
-		41A86A7A24EE6BF5003EFC0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7924EE6BF5003EFC0F /* ContentView.swift */; };
 		41A86A7C24EE6BF5003EFC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */; };
 		41A86A7F24EE6BF5003EFC0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A7E24EE6BF5003EFC0F /* Preview Assets.xcassets */; };
-		41A86A8224EE6BF5003EFC0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A86A8024EE6BF5003EFC0F /* Main.storyboard */; };
-		41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */; };
 		41A86A9924EE6BF6003EFC0F /* chronographUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */; };
+		41E3FEF2250035C9003E586C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
+		41E3FEF6250035D5003E586C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A624F95FC90083A9EC /* LoginView.swift */; };
+		41E3FEF7250035D8003E586C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
+		41E3FEF8250035D8003E586C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
+		41E3FEFA2500BE60003E586C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEF92500BE60003E586C /* AppState.swift */; };
+		41E3FEFB2500BE60003E586C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEF92500BE60003E586C /* AppState.swift */; };
+		41E3FEFC2500BE60003E586C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEF92500BE60003E586C /* AppState.swift */; };
+		41E3FEFE2500BE9D003E586C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEFD2500BE9D003E586C /* Store.swift */; };
+		41E3FEFF2500BE9D003E586C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEFD2500BE9D003E586C /* Store.swift */; };
+		41E3FF002500BE9D003E586C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3FEFD2500BE9D003E586C /* Store.swift */; };
+		9363A395190C2DDC61F09964 /* Pods_chronograph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA2DF3A16155F260395B918 /* Pods_chronograph.framework */; };
+		9FA84C13F713B67C5FC87746 /* Pods_chronographTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBE441480D7894C5A8094A2 /* Pods_chronographTests.framework */; };
+		D5B87DA77E53C418F29ECBA8 /* Pods_chronograph_chronographUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85421D53CCFEEA89C58148FA /* Pods_chronograph_chronographUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41A86A8A24EE6BF5003EFC0F /* PBXContainerItemProxy */ = {
+		414F6307250A1305006D3D43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 41A86A6C24EE6BF5003EFC0F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 41A86A7324EE6BF5003EFC0F;
 			remoteInfo = chronograph;
 		};
-		41A86A9524EE6BF6003EFC0F /* PBXContainerItemProxy */ = {
+		414F6309250A130F006D3D43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 41A86A6C24EE6BF5003EFC0F /* Project object */;
 			proxyType = 1;
@@ -40,24 +69,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronographTests.debug.xcconfig"; path = "Target Support Files/Pods-chronographTests/Pods-chronographTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2614DBD7250F4FB500598B48 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2614DBD9250F56E000598B48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2614DBDB250F573E00598B48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		412EB68924F7BE3C0083A9EC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTest.swift; sourceTree = "<group>"; };
+		412EB6A324F94BB20083A9EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		412EB6A624F95FC90083A9EC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4133D0382506AC320005603F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41470B9924F7871C009AF96B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		414F62F1250A0516006D3D43 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		417FE77B2506C57C001ABC9B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		41A86A7424EE6BF5003EFC0F /* chronograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chronograph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41A86A7924EE6BF5003EFC0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A86A7E24EE6BF5003EFC0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		41A86A8124EE6BF5003EFC0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41A86A8324EE6BF5003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A86A8424EE6BF5003EFC0F /* chronograph.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = chronograph.entitlements; sourceTree = "<group>"; };
 		41A86A8924EE6BF5003EFC0F /* chronographTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chronographTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronographTests.swift; sourceTree = "<group>"; };
 		41A86A8F24EE6BF5003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A86A9424EE6BF6003EFC0F /* chronographUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chronographUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A86A9824EE6BF6003EFC0F /* chronographUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronographUITests.swift; sourceTree = "<group>"; };
 		41A86A9A24EE6BF6003EFC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E3FEF92500BE60003E586C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		41E3FEFD2500BE9D003E586C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4636C377E9C3685960E1DB81 /* Pods-chronograph-chronographUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph-chronographUITests.debug.xcconfig"; path = "Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DBE441480D7894C5A8094A2 /* Pods_chronographTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chronographTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EA4802E146AB12A2C2B9C5 /* Pods-chronograph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph.debug.xcconfig"; path = "Target Support Files/Pods-chronograph/Pods-chronograph.debug.xcconfig"; sourceTree = "<group>"; };
+		85421D53CCFEEA89C58148FA /* Pods_chronograph_chronographUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chronograph_chronographUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91AA211D6C17E72FE7C21386 /* Pods-chronographTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronographTests.release.xcconfig"; path = "Target Support Files/Pods-chronographTests/Pods-chronographTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3DA5CA9683FBEF8ECF9D23C /* Pods-chronograph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph.release.xcconfig"; path = "Target Support Files/Pods-chronograph/Pods-chronograph.release.xcconfig"; sourceTree = "<group>"; };
+		CCA2DF3A16155F260395B918 /* Pods_chronograph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chronograph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0622F1581C2861B2D85D1A4 /* Pods-chronograph-chronographUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronograph-chronographUITests.release.xcconfig"; path = "Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41470B8C24F64F67009AF96B /* Cleanse in Frameworks */,
+				9363A395190C2DDC61F09964 /* Pods_chronograph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA84C13F713B67C5FC87746 /* Pods_chronographTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,20 +125,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B87DA77E53C418F29ECBA8 /* Pods_chronograph_chronographUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412EB69524F919F00083A9EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2614DBD9250F56E000598B48 /* ContentView.swift */,
+				412EB6A624F95FC90083A9EC /* LoginView.swift */,
+				417FE77B2506C57C001ABC9B /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		412EB6A224F94B9C0083A9EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				412EB6A324F94BB20083A9EC /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		414F62F0250A04DF006D3D43 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				414F62F1250A0516006D3D43 /* UserAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		41A86A6B24EE6BF5003EFC0F = {
 			isa = PBXGroup;
 			children = (
+				2614DBDB250F573E00598B48 /* README.md */,
 				41470B9924F7871C009AF96B /* main.swift */,
 				41A86A7624EE6BF5003EFC0F /* chronograph */,
 				41A86A8C24EE6BF5003EFC0F /* chronographTests */,
 				41A86A9724EE6BF6003EFC0F /* chronographUITests */,
 				41A86A7524EE6BF5003EFC0F /* Products */,
+				53525D7FBE543821A3A4F9DF /* Pods */,
+				50ACFBB6A3EB309051C318DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,17 +185,19 @@
 		41A86A7624EE6BF5003EFC0F /* chronograph */ = {
 			isa = PBXGroup;
 			children = (
-				412EB68924F7BE3C0083A9EC /* Application.swift */,
-				41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */,
-				41A86A7924EE6BF5003EFC0F /* ContentView.swift */,
-				41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */,
-				41A86A8024EE6BF5003EFC0F /* Main.storyboard */,
-				41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */,
-				41A86A7924EE6BF5003EFC0F /* ContentView.swift */,
-				41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */,
-				41A86A8324EE6BF5003EFC0F /* Info.plist */,
 				41A86A8424EE6BF5003EFC0F /* chronograph.entitlements */,
+				41A86A8324EE6BF5003EFC0F /* Info.plist */,
+				41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */,
+				412EB68924F7BE3C0083A9EC /* Application.swift */,
+				41E3FEF92500BE60003E586C /* AppState.swift */,
+				2614DBD7250F4FB500598B48 /* Config.swift */,
+				41E3FEFD2500BE9D003E586C /* Store.swift */,
+				4133D0382506AC320005603F /* ViewController.swift */,
+				41A86A7B24EE6BF5003EFC0F /* Assets.xcassets */,
+				414F62F0250A04DF006D3D43 /* API */,
+				412EB6A224F94B9C0083A9EC /* Models */,
 				41A86A7D24EE6BF5003EFC0F /* Preview Content */,
+				412EB69524F919F00083A9EC /* Views */,
 			);
 			path = chronograph;
 			sourceTree = "<group>";
@@ -136,9 +213,7 @@
 		41A86A8C24EE6BF5003EFC0F /* chronographTests */ = {
 			isa = PBXGroup;
 			children = (
-				41A86A8D24EE6BF5003EFC0F /* chronographTests.swift */,
 				41A86A8F24EE6BF5003EFC0F /* Info.plist */,
-				412EB68B24F7C19D0083A9EC /* ApplicationTest.swift */,
 				41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */,
 			);
 			path = chronographTests;
@@ -153,6 +228,29 @@
 			path = chronographUITests;
 			sourceTree = "<group>";
 		};
+		50ACFBB6A3EB309051C318DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCA2DF3A16155F260395B918 /* Pods_chronograph.framework */,
+				85421D53CCFEEA89C58148FA /* Pods_chronograph_chronographUITests.framework */,
+				4DBE441480D7894C5A8094A2 /* Pods_chronographTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53525D7FBE543821A3A4F9DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79EA4802E146AB12A2C2B9C5 /* Pods-chronograph.debug.xcconfig */,
+				B3DA5CA9683FBEF8ECF9D23C /* Pods-chronograph.release.xcconfig */,
+				4636C377E9C3685960E1DB81 /* Pods-chronograph-chronographUITests.debug.xcconfig */,
+				D0622F1581C2861B2D85D1A4 /* Pods-chronograph-chronographUITests.release.xcconfig */,
+				22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */,
+				91AA211D6C17E72FE7C21386 /* Pods-chronographTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,18 +258,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A86A9D24EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronograph" */;
 			buildPhases = (
+				CC03D6DE178BB390ACBD2CEA /* [CP] Check Pods Manifest.lock */,
 				41A86A7024EE6BF5003EFC0F /* Sources */,
 				41A86A7124EE6BF5003EFC0F /* Frameworks */,
 				41A86A7224EE6BF5003EFC0F /* Resources */,
+				FEC71F3D6DECD6C72546AB45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = chronograph;
-			packageProductDependencies = (
-				41470B8B24F64F67009AF96B /* Cleanse */,
-			);
 			productName = chronograph;
 			productReference = 41A86A7424EE6BF5003EFC0F /* chronograph.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A86AA024EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographTests" */;
 			buildPhases = (
+				901795C52E0AE1E9FE222C01 /* [CP] Check Pods Manifest.lock */,
 				41A86A8524EE6BF5003EFC0F /* Sources */,
 				41A86A8624EE6BF5003EFC0F /* Frameworks */,
 				41A86A8724EE6BF5003EFC0F /* Resources */,
@@ -187,7 +285,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				41A86A8B24EE6BF5003EFC0F /* PBXTargetDependency */,
+				414F6308250A1305006D3D43 /* PBXTargetDependency */,
 			);
 			name = chronographTests;
 			productName = chronographTests;
@@ -198,14 +296,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A86AA324EE6BF6003EFC0F /* Build configuration list for PBXNativeTarget "chronographUITests" */;
 			buildPhases = (
+				EEAC11FAA06D01EB3BBEAFB5 /* [CP] Check Pods Manifest.lock */,
 				41A86A9024EE6BF6003EFC0F /* Sources */,
 				41A86A9124EE6BF6003EFC0F /* Frameworks */,
 				41A86A9224EE6BF6003EFC0F /* Resources */,
+				05D1ADBB0957216E582992BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				41A86A9624EE6BF6003EFC0F /* PBXTargetDependency */,
+				414F630A250A130F006D3D43 /* PBXTargetDependency */,
 			);
 			name = chronographUITests;
 			productName = chronographUITests;
@@ -244,9 +344,6 @@
 				Base,
 			);
 			mainGroup = 41A86A6B24EE6BF5003EFC0F;
-			packageReferences = (
-				41470B8A24F64F67009AF96B /* XCRemoteSwiftPackageReference "Cleanse" */,
-			);
 			productRefGroup = 41A86A7524EE6BF5003EFC0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,7 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A86A8224EE6BF5003EFC0F /* Main.storyboard in Resources */,
+				2614DBDC250F573E00598B48 /* README.md in Resources */,
 				41A86A7F24EE6BF5003EFC0F /* Preview Assets.xcassets in Resources */,
 				41A86A7C24EE6BF5003EFC0F /* Assets.xcassets in Resources */,
 			);
@@ -285,15 +382,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05D1ADBB0957216E582992BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		901795C52E0AE1E9FE222C01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chronographTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC03D6DE178BB390ACBD2CEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chronograph-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAC11FAA06D01EB3BBEAFB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chronograph-chronographUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC71F3D6DECD6C72546AB45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph/Pods-chronograph-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chronograph/Pods-chronograph-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chronograph/Pods-chronograph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41A86A7024EE6BF5003EFC0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E3FEFA2500BE60003E586C /* AppState.swift in Sources */,
+				417FE77C2506C57C001ABC9B /* HomeView.swift in Sources */,
 				412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */,
-				41A86A7A24EE6BF5003EFC0F /* ContentView.swift in Sources */,
+				2614DBD8250F4FB500598B48 /* Config.swift in Sources */,
+				412EB6A724F95FC90083A9EC /* LoginView.swift in Sources */,
 				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
-				41A86A7A24EE6BF5003EFC0F /* ContentView.swift in Sources */,
+				4133D0392506AC320005603F /* ViewController.swift in Sources */,
+				41E3FEFE2500BE9D003E586C /* Store.swift in Sources */,
+				412EB6A424F94BB20083A9EC /* User.swift in Sources */,
+				414F62F2250A0516006D3D43 /* UserAPI.swift in Sources */,
+				412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */,
+				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
+				2614DBDA250F56E000598B48 /* ContentView.swift in Sources */,
 				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
 				41470B9A24F7871C009AF96B /* main.swift in Sources */,
 			);
@@ -303,9 +512,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				412EB68C24F7C19D0083A9EC /* ApplicationTest.swift in Sources */,
+				41E3FEF7250035D8003E586C /* Application.swift in Sources */,
+				412EB6A824F95FC90083A9EC /* LoginView.swift in Sources */,
+				2614DBDD250F592D00598B48 /* ContentView.swift in Sources */,
+				41E3FEFB2500BE60003E586C /* AppState.swift in Sources */,
+				4133D03A2506AC320005603F /* ViewController.swift in Sources */,
+				2614DBDF250F593200598B48 /* Config.swift in Sources */,
 				41470B9C24F78CBB009AF96B /* TestAppDelegate.swift in Sources */,
-				41A86A8E24EE6BF5003EFC0F /* chronographTests.swift in Sources */,
+				414F62F3250A0F76006D3D43 /* UserAPI.swift in Sources */,
+				41E3FEFF2500BE9D003E586C /* Store.swift in Sources */,
+				414F62F5250A0F7E006D3D43 /* AppDelegate.swift in Sources */,
+				412EB6A524F94BB20083A9EC /* User.swift in Sources */,
+				417FE77D2506C57C001ABC9B /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,35 +531,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414F62F6250A0F7E006D3D43 /* AppDelegate.swift in Sources */,
+				2614DBDE250F592D00598B48 /* ContentView.swift in Sources */,
+				41E3FEF6250035D5003E586C /* LoginView.swift in Sources */,
+				41E3FEF8250035D8003E586C /* Application.swift in Sources */,
+				41E3FEFC2500BE60003E586C /* AppState.swift in Sources */,
+				2614DBE0250F593200598B48 /* Config.swift in Sources */,
+				414F62F4250A0F77006D3D43 /* UserAPI.swift in Sources */,
+				417FE77E2506C57C001ABC9B /* HomeView.swift in Sources */,
+				4133D03B2506AC320005603F /* ViewController.swift in Sources */,
+				41E3FF002500BE9D003E586C /* Store.swift in Sources */,
 				41A86A9924EE6BF6003EFC0F /* chronographUITests.swift in Sources */,
+				41E3FEF2250035C9003E586C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		41A86A8B24EE6BF5003EFC0F /* PBXTargetDependency */ = {
+		414F6308250A1305006D3D43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41A86A7324EE6BF5003EFC0F /* chronograph */;
-			targetProxy = 41A86A8A24EE6BF5003EFC0F /* PBXContainerItemProxy */;
+			targetProxy = 414F6307250A1305006D3D43 /* PBXContainerItemProxy */;
 		};
-		41A86A9624EE6BF6003EFC0F /* PBXTargetDependency */ = {
+		414F630A250A130F006D3D43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41A86A7324EE6BF5003EFC0F /* chronograph */;
-			targetProxy = 41A86A9524EE6BF6003EFC0F /* PBXContainerItemProxy */;
+			targetProxy = 414F6309250A130F006D3D43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		41A86A8024EE6BF5003EFC0F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41A86A8124EE6BF5003EFC0F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		41A86A9B24EE6BF6003EFC0F /* Debug */ = {
@@ -459,8 +677,10 @@
 		};
 		41A86A9E24EE6BF6003EFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79EA4802E146AB12A2C2B9C5 /* Pods-chronograph.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CALLBACK_URL_SCHEME = chronograph;
 				CODE_SIGN_ENTITLEMENTS = chronograph/chronograph.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -474,14 +694,17 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronograph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://localhost:8000";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		41A86A9F24EE6BF6003EFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DA5CA9683FBEF8ECF9D23C /* Pods-chronograph.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CALLBACK_URL_SCHEME = chronograph;
 				CODE_SIGN_ENTITLEMENTS = chronograph/chronograph.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -495,14 +718,15 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = coop.nilenso.chronograph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "https://chronograph.amongdragons.com";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		41A86AA124EE6BF6003EFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -522,8 +746,8 @@
 		};
 		41A86AA224EE6BF6003EFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91AA211D6C17E72FE7C21386 /* Pods-chronographTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -543,8 +767,8 @@
 		};
 		41A86AA424EE6BF6003EFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4636C377E9C3685960E1DB81 /* Pods-chronograph-chronographUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = chronographUITests/Info.plist;
@@ -562,8 +786,8 @@
 		};
 		41A86AA524EE6BF6003EFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0622F1581C2861B2D85D1A4 /* Pods-chronograph-chronographUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = chronographUITests/Info.plist;
@@ -619,25 +843,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		41470B8A24F64F67009AF96B /* XCRemoteSwiftPackageReference "Cleanse" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/square/Cleanse";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		41470B8B24F64F67009AF96B /* Cleanse */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41470B8A24F64F67009AF96B /* XCRemoteSwiftPackageReference "Cleanse" */;
-			productName = Cleanse;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41A86A6C24EE6BF5003EFC0F /* Project object */;
 }
