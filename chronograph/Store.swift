@@ -43,7 +43,7 @@ class Store: ObservableObject {
             switch(result) {
             case .failure(let error):
                 debugPrint("Error while fetching user information!", error.errorDescription)
-            case.success(let user):
+            case .success(let user):
                 self.appState.currentUser = user
                 return
             }
@@ -60,5 +60,24 @@ class Store: ObservableObject {
         session.presentationContextProvider = self.presentationContext;
         
         session.start()
+    }
+    
+    func getOrganizations() {
+        let organizationApi = OrganizationApi.init(accessToken: self.appState.accessToken);
+        cancellable = organizationApi.list().sink { result in
+            switch result {
+            case .failure(let error):
+                debugPrint("HERE")
+                debugPrint("Error while fetching organizations", error.errorDescription)
+            case .success(let organizations):
+                self.appState.organizations = organizations
+            }
+        }
+    }
+    
+    func organizations() -> AnyPublisher<[Organization], Never> {
+        return $appState
+            .map(\.organizations)
+            .eraseToAnyPublisher()
     }
 }

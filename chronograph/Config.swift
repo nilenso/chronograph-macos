@@ -25,6 +25,10 @@ class Config {
         return Config.serverURL() + "?client-type=desktop"
     }
     
+    static func organizationsURL() -> String {
+        return Config.serverURL() + "/api/organizations/"
+    }
+    
     static func callbackURLScheme() -> String {
         return Config.lookupKey(key: "CALLBACK_URL_SCHEME") as! String
     }
