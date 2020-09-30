@@ -29,6 +29,9 @@
 		414F62F4250A0F77006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
 		414F62F5250A0F7E006D3D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
 		414F62F6250A0F7E006D3D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
+		4152F71C252488B400837F10 /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F71B252488B400837F10 /* OrganizationsView.swift */; };
+		4152F7242524898400837F10 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7232524898400837F10 /* Organization.swift */; };
+		4152F72925248EE200837F10 /* OrganizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F72825248EE200837F10 /* OrganizationAPI.swift */; };
 		417FE77C2506C57C001ABC9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417FE77B2506C57C001ABC9B /* HomeView.swift */; };
 		417FE77D2506C57C001ABC9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417FE77B2506C57C001ABC9B /* HomeView.swift */; };
 		417FE77E2506C57C001ABC9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417FE77B2506C57C001ABC9B /* HomeView.swift */; };
@@ -80,6 +83,9 @@
 		41470B9924F7871C009AF96B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		414F62F1250A0516006D3D43 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		4152F71B252488B400837F10 /* OrganizationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsView.swift; sourceTree = "<group>"; };
+		4152F7232524898400837F10 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		4152F72825248EE200837F10 /* OrganizationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationAPI.swift; sourceTree = "<group>"; };
 		417FE77B2506C57C001ABC9B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		41A86A7424EE6BF5003EFC0F /* chronograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chronograph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				2614DBD9250F56E000598B48 /* ContentView.swift */,
 				412EB6A624F95FC90083A9EC /* LoginView.swift */,
 				417FE77B2506C57C001ABC9B /* HomeView.swift */,
+				4152F71B252488B400837F10 /* OrganizationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				412EB6A324F94BB20083A9EC /* User.swift */,
+				4152F7232524898400837F10 /* Organization.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				414F62F1250A0516006D3D43 /* UserAPI.swift */,
+				4152F72825248EE200837F10 /* OrganizationAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -490,7 +499,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4152F7242524898400837F10 /* Organization.swift in Sources */,
 				41E3FEFA2500BE60003E586C /* AppState.swift in Sources */,
+				4152F71C252488B400837F10 /* OrganizationsView.swift in Sources */,
 				417FE77C2506C57C001ABC9B /* HomeView.swift in Sources */,
 				412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */,
 				2614DBD8250F4FB500598B48 /* Config.swift in Sources */,
@@ -499,6 +510,7 @@
 				4133D0392506AC320005603F /* ViewController.swift in Sources */,
 				41E3FEFE2500BE9D003E586C /* Store.swift in Sources */,
 				412EB6A424F94BB20083A9EC /* User.swift in Sources */,
+				4152F72925248EE200837F10 /* OrganizationAPI.swift in Sources */,
 				414F62F2250A0516006D3D43 /* UserAPI.swift in Sources */,
 				412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */,
 				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,

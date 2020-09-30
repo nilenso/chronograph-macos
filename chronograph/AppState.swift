@@ -8,4 +8,5 @@
 struct AppState {
     var currentUser: User!;
     var accessToken: String!;
+    var organizations: [Organization] = [];
 }

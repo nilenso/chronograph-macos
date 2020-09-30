@@ -1,4 +1,4 @@
-//
+    //
 //  HomeView.swift
 //  chronograph
 //
@@ -16,7 +16,10 @@ struct HomeView: View {
     var body: some View {
         return VStack {
             if self.currentUser != nil {
-                Text("Hello \(currentUser?.name ?? "Default")!")
+                VStack {
+                    Text("Hello \(currentUser?.name ?? "Default")!")
+                    OrganizationsView()
+                }
             } else {
                 LoginView()
             }
