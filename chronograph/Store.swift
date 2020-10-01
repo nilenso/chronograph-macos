@@ -11,9 +11,14 @@ import AuthenticationServices
 
 class Store: ObservableObject {
     @Published private var appState: AppState;
+    
     weak var presentationContext: ViewController!;
     
+    var managedObjectContext: NSManagedObjectContext!;
+    
     var cancellable: AnyCancellable!
+    
+    var fetchOrganizationsCancellable: AnyCancellable!
     
     init(appState: AppState) {
         self.appState = appState;
@@ -67,15 +72,29 @@ class Store: ObservableObject {
         cancellable = organizationApi.list().sink { result in
             switch result {
             case .failure(let error):
-                debugPrint("HERE")
                 debugPrint("Error while fetching organizations", error.errorDescription)
             case .success(let organizations):
-                self.appState.organizations = organizations
+                let success = try! Organization.batchInsert(
+                    context: self.managedObjectContext,
+                    objects: organizations
+                )
+                
+                try! self.managedObjectContext.save()
             }
         }
     }
     
     func organizations() -> AnyPublisher<[Organization], Never> {
+        fetchOrganizationsCancellable = NotificationCenter.default
+            .publisher(for: .NSManagedObjectContextDidSave, object: self.managedObjectContext)
+            .map { _ -> [Organization] in
+                let request: NSFetchRequest<OrganizationCD> = NSFetchRequest(entityName: "OrganizationCD")
+                try! print(self.managedObjectContext.fetch(request))
+                return try! self.managedObjectContext.fetch(request).map(Organization.init)
+            }.sink { organizations in
+                print(organizations)
+                self.appState.organizations = organizations
+            }
         return $appState
             .map(\.organizations)
             .eraseToAnyPublisher()
