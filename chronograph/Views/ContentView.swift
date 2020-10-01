@@ -21,7 +21,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(store: Store(appState: AppState()))
     }
-   
 }
 
 struct StoreKey: EnvironmentKey {

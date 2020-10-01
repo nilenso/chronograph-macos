@@ -12,6 +12,16 @@ class Application {
     let popover: NSPopover;
     let viewController: ViewController;
     let store: Store;
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Model")
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Unable to load persistent stores: \(error)")
+            }
+        }
+        return container
+    }();
 
     init() {
         self.statusItem = NSStatusBar.system.statusItem(
@@ -36,6 +46,7 @@ class Application {
             button.title = title;
             button.action = #selector(toggleContainer(_:));
         }
+        self.store.managedObjectContext = self.persistentContainer.viewContext;
         self.store.presentationContext = viewController;
         showContainer();
     }
