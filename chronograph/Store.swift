@@ -10,30 +10,30 @@ import Combine
 import AuthenticationServices
 
 class Store: ObservableObject {
-    @Published private var appState: AppState;
-    
-    weak var presentationContext: ViewController!;
-    
-    var managedObjectContext: NSManagedObjectContext!;
-    
+    @Published private var appState: AppState
+
+    weak var presentationContext: ViewController!
+
+    var managedObjectContext: NSManagedObjectContext!
+
     var cancellable: AnyCancellable!
-    
+
     var fetchOrganizationsCancellable: AnyCancellable!
-    
+
     init(appState: AppState) {
-        self.appState = appState;
+        self.appState = appState
     }
-    
+
     func currentUser() -> AnyPublisher<User?, Never> {
         return $appState
             .map(\.currentUser)
             .eraseToAnyPublisher()
     }
-    
+
     func loginUser() {
         let authURL = URL(string: Config.loginPageURL())!
-        
-        let subject = CurrentValueSubject<String?, Never>(nil);
+
+        let subject = CurrentValueSubject<String?, Never>(nil)
         cancellable = subject
             .compactMap {v in v}
             .receive(on: DispatchQueue.main)
@@ -45,7 +45,7 @@ class Store: ObservableObject {
             UserAPI(accessToken: accessToken).me()
         }
         .sink { result in
-            switch(result) {
+            switch result {
             case .failure(let error):
                 debugPrint("Error while fetching user information!", error.errorDescription)
             case .success(let user):
@@ -53,22 +53,21 @@ class Store: ObservableObject {
                 return
             }
         }
-    
-        let session = ASWebAuthenticationSession(url: authURL, callbackURLScheme: Config.callbackURLScheme())
-        { callbackURL, error in
+
+        let session = ASWebAuthenticationSession(url: authURL, callbackURLScheme: Config.callbackURLScheme()) { callbackURL, error in
             guard error == nil, let callbackURL = callbackURL else { return }
-            
+
             let queryItems = URLComponents(string: callbackURL.absoluteString)?.queryItems
             let accessToken = queryItems?.filter({ $0.name == "access-token" }).first?.value
             subject.send(accessToken)
         }
-        session.presentationContextProvider = self.presentationContext;
-        
+        session.presentationContextProvider = self.presentationContext
+
         session.start()
     }
-    
+
     func getOrganizations() {
-        let organizationApi = OrganizationApi.init(accessToken: self.appState.accessToken);
+        let organizationApi = OrganizationApi.init(accessToken: self.appState.accessToken)
         cancellable = organizationApi.list().sink { result in
             switch result {
             case .failure(let error):
@@ -78,12 +77,12 @@ class Store: ObservableObject {
                     context: self.managedObjectContext,
                     objects: organizations
                 )
-                
+
                 try! self.managedObjectContext.save()
             }
         }
     }
-    
+
     func organizations() -> AnyPublisher<[Organization], Never> {
         fetchOrganizationsCancellable = NotificationCenter.default
             .publisher(for: .NSManagedObjectContextDidSave, object: self.managedObjectContext)

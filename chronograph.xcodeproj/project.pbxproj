@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -278,6 +278,7 @@
 				41A86A7124EE6BF5003EFC0F /* Frameworks */,
 				41A86A7224EE6BF5003EFC0F /* Resources */,
 				FEC71F3D6DECD6C72546AB45 /* [CP] Embed Pods Frameworks */,
+				1B0249E3253DD0B500D067EF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -414,6 +415,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chronograph-chronographUITests/Pods-chronograph-chronographUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1B0249E3253DD0B500D067EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		901795C52E0AE1E9FE222C01 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

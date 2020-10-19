@@ -12,7 +12,7 @@ class ViewController: NSHostingController<ContentView> {
     override init(rootView: ContentView) {
         super.init(rootView: rootView)
     }
-    
+
     @objc required dynamic init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -20,6 +20,6 @@ class ViewController: NSHostingController<ContentView> {
 
 extension ViewController: ASWebAuthenticationPresentationContextProviding {
     func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
-        return view.window!;
+        return view.window!
     }
 }
