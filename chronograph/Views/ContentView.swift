@@ -6,14 +6,18 @@
 //  Copyright © 2020 nilenso. All rights reserved.
 //
 import SwiftUI
+import Darwin
 
 struct ContentView: View {
     let store: Store
 
     var body: some View {
-        return HomeView()
+        return VStack() { HomeView()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .environment(\.store, store)
+            
+            Button("Exit", action: {() -> Void in exit(0)})
+        }
     }
 }
 
