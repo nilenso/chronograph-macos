@@ -6,7 +6,7 @@
 //  Copyright © 2020 nilenso. All rights reserved.
 //
 struct AppState {
-    var currentUser: User!;
-    var accessToken: String!;
-    var organizations: [Organization] = [];
+    var currentUser: User!
+    var accessToken: String!
+    var organizations: [Organization] = []
 }

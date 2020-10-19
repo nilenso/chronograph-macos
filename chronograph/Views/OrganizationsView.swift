@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct OrganizationsView: View {
-    @Environment(\.store) var store: Store;
-        
-    @State var organizations: [Organization] = [];
-    
+    @Environment(\.store) var store: Store
+
+    @State var organizations: [Organization] = []
+
     var body: some View {
         return VStack {
             Text("Organizations")

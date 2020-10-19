@@ -10,27 +10,26 @@ import Combine
 import AuthenticationServices
 
 class UserStore: ObservableObject {
-    @Published var currentUser: User! = nil;
-    
-    var viewController: ViewController!;
-    
+    @Published var currentUser: User! = nil
+
+    var viewController: ViewController!
+
     init() {
-        viewController = ViewController(rootView: ContentView(userStore: self));
+        viewController = ViewController(rootView: ContentView(userStore: self))
     }
-    
+
     func login() {
-        guard let authURL = URL(string: "http://localhost:8000/") else { return };
-        let scheme = "chronograph";
-        
-        print("Login");
+        guard let authURL = URL(string: "http://localhost:8000/") else { return }
+        let scheme = "chronograph"
+
+        print("Login")
         let session = ASWebAuthenticationSession(url: authURL, callbackURLScheme: scheme) {
-            callbackURL, error in
-            
-            
+            _, _ in
+
         }
-        
-        session.presentationContextProvider = viewController;
-        
+
+        session.presentationContextProvider = viewController
+
         session.start()
     }
 }

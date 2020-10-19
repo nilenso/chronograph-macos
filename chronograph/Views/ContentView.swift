@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    let store: Store;
-    
+    let store: Store
+
     var body: some View {
         return HomeView()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .environment(\.store, store);
+            .environment(\.store, store)
     }
 }
 
@@ -24,9 +24,9 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct StoreKey: EnvironmentKey {
-    typealias Value = Store;
-    
-    static var defaultValue: Store = Store(appState: AppState());
+    typealias Value = Store
+
+    static var defaultValue: Store = Store(appState: AppState())
 }
 
 extension EnvironmentValues {

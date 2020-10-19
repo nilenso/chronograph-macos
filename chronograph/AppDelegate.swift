@@ -9,14 +9,14 @@ import Cocoa
 import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    var application: Application!;
+    var application: Application!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        self.application = Application();
-        self.application.start(title: "TT");
+        self.application = Application()
+        self.application.start(title: "TT")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        
+
     }
 }

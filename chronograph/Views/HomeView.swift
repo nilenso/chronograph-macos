@@ -1,4 +1,4 @@
-    //
+//
 //  HomeView.swift
 //  chronograph
 //
@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Environment(\.store) var store: Store;
-    
-    @State var currentUser: User! = nil;
-    
+    @Environment(\.store) var store: Store
+
+    @State var currentUser: User! = nil
+
     var body: some View {
         return VStack {
             if self.currentUser != nil {
@@ -34,4 +34,3 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
-

@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct LoginView: View {
-    @Environment(\.store) var store: Store;
-    
+    @Environment(\.store) var store: Store
+
     var body: some View {
         Button(action: {
-            self.store.loginUser();
+            self.store.loginUser()
         }) {
-            Text("Login");
+            Text("Login")
         }
     }
 }
