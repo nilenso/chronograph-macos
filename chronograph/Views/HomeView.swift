@@ -12,10 +12,11 @@ struct HomeView: View {
     @Environment(\.store) var store: Store
 
     @State var currentUser: User! = nil
+    @State var credentials: Credentials! = nil
 
     var body: some View {
         return VStack {
-            if self.currentUser != nil {
+            if self.credentials != nil {
                 VStack {
                     Text("Hello \(currentUser?.name ?? "Default")!")
                     OrganizationsView()
@@ -23,7 +24,11 @@ struct HomeView: View {
             } else {
                 LoginView()
             }
-        }.onReceive(store.currentUser()) { user in
+        }
+        .onReceive(store.credentials()) {
+            credentials in self.credentials = credentials
+        }
+        .onReceive(store.currentUser()) { user in
             self.currentUser = user
         }
     }

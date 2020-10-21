@@ -9,14 +9,14 @@ import Alamofire
 import Combine
 
 class UserAPI {
-    let accessToken: String
+    let credentials: Credentials
 
-    init(accessToken: String) {
-        self.accessToken = accessToken
+    init(credentials: Credentials) {
+        self.credentials = credentials
     }
 
     func me() -> AnyPublisher<Result<User, AFError>, Never> {
-        let headers: HTTPHeaders = [.authorization(bearerToken: accessToken)]
+        let headers: HTTPHeaders = [.authorization(bearerToken: self.credentials.token)]
 
         return AF.request(Config.userInfoURL(), headers: headers)
             .publishDecodable(type: User.self)

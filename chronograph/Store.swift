@@ -22,12 +22,61 @@ class Store: ObservableObject {
 
     init(appState: AppState) {
         self.appState = appState
+        let storedCredentials = self.fetchTokenFromKeychain()
+
+        if storedCredentials != nil {
+            self.appState.credentials = storedCredentials
+        }
     }
 
+    func credentials() -> AnyPublisher<Credentials?, Never> {
+        return $appState
+            .map(\.credentials)
+            .eraseToAnyPublisher()
+    }
     func currentUser() -> AnyPublisher<User?, Never> {
         return $appState
             .map(\.currentUser)
             .eraseToAnyPublisher()
+    }
+
+    func storeTokenInKeychain(token: String) -> Bool {
+        let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
+                                    kSecAttrAccount as String: "chronograph-application-token",
+                                    kSecAttrServer as String: Config.serverURL(),
+                                    kSecValueData as String: token.data(using: .utf8)!]
+        let status = SecItemAdd(query as CFDictionary, nil)
+
+        if status == errSecDuplicateItem {
+            debugPrint("Duplicate item when storing credentials in keychain")
+            return false
+        }
+
+        return status == errSecSuccess
+    }
+
+    func fetchTokenFromKeychain() -> Credentials? {
+        let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
+                                    kSecReturnData as String: kCFBooleanTrue!,
+                                    kSecMatchLimit as String: kSecMatchLimitOne,
+                                    kSecAttrServer as String: Config.serverURL(),
+                                    kSecAttrAccount as String: "chronograph-application-token"]
+        var item: CFTypeRef?
+        let status = SecItemCopyMatching(query as CFDictionary, &item)
+        guard status != errSecItemNotFound else { return nil }
+        guard status == errSecSuccess else { return nil }
+
+        guard let secItem = item as? Data else {
+            debugPrint("Could not fetch credentials from keychain")
+            return nil
+        }
+
+        guard let token = String(data: secItem, encoding: .utf8) else {
+            debugPrint("Could not decode keychain credentials")
+            return nil
+        }
+
+        return Credentials(token: token)
     }
 
     func loginUser() {
@@ -37,22 +86,24 @@ class Store: ObservableObject {
         cancellable = subject
             .compactMap {v in v}
             .receive(on: DispatchQueue.main)
-            .map {accessToken in
-                self.appState.accessToken = accessToken
-                return accessToken
-        }
-        .flatMap { accessToken in
-            UserAPI(accessToken: accessToken).me()
-        }
-        .sink { result in
-            switch result {
-            case .failure(let error):
-                debugPrint("Error while fetching user information!", error.errorDescription)
-            case .success(let user):
-                self.appState.currentUser = user
-                return
+            .map { accessToken in
+                self.appState.credentials = Credentials(token: accessToken)
+                self.storeTokenInKeychain(token: accessToken)
+
+                accessToken
             }
-        }
+            .flatMap { _ in
+                UserAPI(credentials: self.appState.credentials).me()
+            }
+            .sink { result in
+                switch result {
+                case .failure(let error):
+                    debugPrint("Error while fetching user information!", error.errorDescription)
+                case .success(let user):
+                    self.appState.currentUser = user
+                    return
+                }
+            }
 
         let session = ASWebAuthenticationSession(url: authURL, callbackURLScheme: Config.callbackURLScheme()) { callbackURL, error in
             guard error == nil, let callbackURL = callbackURL else { return }
@@ -67,7 +118,12 @@ class Store: ObservableObject {
     }
 
     func getOrganizations() {
-        let organizationApi = OrganizationApi.init(accessToken: self.appState.accessToken)
+        guard let credentials = self.appState.credentials else {
+            debugPrint("Missing access token when fetching organizations")
+            return
+        }
+
+        let organizationApi = OrganizationApi.init(credentials: credentials)
         cancellable = organizationApi.list().sink { result in
             switch result {
             case .failure(let error):
