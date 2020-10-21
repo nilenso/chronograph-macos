@@ -7,6 +7,6 @@
 //
 struct AppState {
     var currentUser: User!
-    var accessToken: String!
+    var credentials: Credentials!
     var organizations: [Organization] = []
 }

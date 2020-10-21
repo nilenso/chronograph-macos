@@ -12,10 +12,10 @@ struct ContentView: View {
     let store: Store
 
     var body: some View {
-        return VStack() { HomeView()
+        return VStack { HomeView()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .environment(\.store, store)
-            
+
             Button("Exit", action: {() -> Void in exit(0)})
         }
     }

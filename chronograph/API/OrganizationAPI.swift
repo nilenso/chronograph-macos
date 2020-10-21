@@ -10,14 +10,14 @@ import Alamofire
 import Combine
 
 class OrganizationApi {
-    let accessToken: String
+    let credentials: Credentials
 
-    init(accessToken: String) {
-        self.accessToken = accessToken
+    init(credentials: Credentials) {
+        self.credentials = credentials
     }
 
     func list() -> AnyPublisher<Result<[Organization], AFError>, Never> {
-        let headers: HTTPHeaders = [.authorization(bearerToken: accessToken)]
+        let headers: HTTPHeaders = [.authorization(bearerToken: self.credentials.token)]
 
         return AF.request(Config.organizationsURL(), headers: headers)
             .publishDecodable(type: [Organization].self)
