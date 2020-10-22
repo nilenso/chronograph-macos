@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1B0249F7253ECD5B00D067EF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0249F6253ECD5B00D067EF /* Credentials.swift */; };
+		1B024A332541703A00D067EF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0249F6253ECD5B00D067EF /* Credentials.swift */; };
+		1B024A3B2541704400D067EF /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F71B252488B400837F10 /* OrganizationsView.swift */; };
+		1B024A3F2541707300D067EF /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7672524C1A900837F10 /* Organization.swift */; };
+		1B024A472541707900D067EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F75B2524BE1700837F10 /* Model.swift */; };
+		1B024A4B254170A400D067EF /* OrganizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F72825248EE200837F10 /* OrganizationAPI.swift */; };
+		1B024A5A254170FF00D067EF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7392524B3E400837F10 /* Model.xcdatamodeld */; };
+		1B024A65254171D800D067EF /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7672524C1A900837F10 /* Organization.swift */; };
+		1B024A66254171D800D067EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F75B2524BE1700837F10 /* Model.swift */; };
+		1B024A67254171D800D067EF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0249F6253ECD5B00D067EF /* Credentials.swift */; };
+		1B024A68254171D800D067EF /* OrganizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F72825248EE200837F10 /* OrganizationAPI.swift */; };
+		1B024A70254171DE00D067EF /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F71B252488B400837F10 /* OrganizationsView.swift */; };
+		1B024A71254171DE00D067EF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7392524B3E400837F10 /* Model.xcdatamodeld */; };
 		2614DBD8250F4FB500598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
 		2614DBDA250F56E000598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
 		2614DBDC250F573E00598B48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2614DBDB250F573E00598B48 /* README.md */; };
@@ -555,6 +567,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B024A5A254170FF00D067EF /* Model.xcdatamodeld in Sources */,
+				1B024A4B254170A400D067EF /* OrganizationAPI.swift in Sources */,
+				1B024A472541707900D067EF /* Model.swift in Sources */,
+				1B024A3F2541707300D067EF /* Organization.swift in Sources */,
+				1B024A3B2541704400D067EF /* OrganizationsView.swift in Sources */,
+				1B024A332541703A00D067EF /* Credentials.swift in Sources */,
 				41E3FEF7250035D8003E586C /* Application.swift in Sources */,
 				412EB6A824F95FC90083A9EC /* LoginView.swift in Sources */,
 				2614DBDD250F592D00598B48 /* ContentView.swift in Sources */,
@@ -574,6 +592,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B024A70254171DE00D067EF /* OrganizationsView.swift in Sources */,
+				1B024A71254171DE00D067EF /* Model.xcdatamodeld in Sources */,
+				1B024A65254171D800D067EF /* Organization.swift in Sources */,
+				1B024A66254171D800D067EF /* Model.swift in Sources */,
+				1B024A67254171D800D067EF /* Credentials.swift in Sources */,
+				1B024A68254171D800D067EF /* OrganizationAPI.swift in Sources */,
 				414F62F6250A0F7E006D3D43 /* AppDelegate.swift in Sources */,
 				2614DBDE250F592D00598B48 /* ContentView.swift in Sources */,
 				41E3FEF6250035D5003E586C /* LoginView.swift in Sources */,
