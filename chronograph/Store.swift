@@ -129,7 +129,8 @@ class Store: ObservableObject {
             case .failure(let error):
                 debugPrint("Error while fetching organizations", error.errorDescription)
             case .success(let organizations):
-                let success = try! Organization.batchInsert(
+                let _ = try! Organization.removeAll(context: self.managedObjectContext, objects: [])
+                let _ = try! Organization.batchInsert(
                     context: self.managedObjectContext,
                     objects: organizations
                 )
