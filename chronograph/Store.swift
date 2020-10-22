@@ -34,6 +34,7 @@ class Store: ObservableObject {
             .map(\.credentials)
             .eraseToAnyPublisher()
     }
+
     func currentUser() -> AnyPublisher<User?, Never> {
         return $appState
             .map(\.currentUser)
@@ -79,6 +80,14 @@ class Store: ObservableObject {
         return Credentials(token: token)
     }
 
+    func deleteTokenFromKeychain() -> Bool {
+        let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
+                                    kSecAttrAccount as String: "chronograph-application-token",
+                                    kSecAttrServer as String: Config.serverURL()]
+        let status = SecItemDelete(query as CFDictionary)
+        return status == errSecSuccess
+    }
+
     func loginUser() {
         let authURL = URL(string: Config.loginPageURL())!
 
@@ -117,6 +126,15 @@ class Store: ObservableObject {
         session.start()
     }
 
+    func logout() -> Bool {
+        guard self.deleteTokenFromKeychain() else { return false; }
+
+        self.appState.credentials = nil
+        self.appState.currentUser = nil
+
+        return true
+    }
+
     func getOrganizations() {
         guard let credentials = self.appState.credentials else {
             debugPrint("Missing access token when fetching organizations")
@@ -129,8 +147,8 @@ class Store: ObservableObject {
             case .failure(let error):
                 debugPrint("Error while fetching organizations", error.errorDescription)
             case .success(let organizations):
-                let _ = try! Organization.removeAll(context: self.managedObjectContext, objects: [])
-                let _ = try! Organization.batchInsert(
+                _ = try! Organization.removeAll(context: self.managedObjectContext, objects: [])
+                _ = try! Organization.batchInsert(
                     context: self.managedObjectContext,
                     objects: organizations
                 )

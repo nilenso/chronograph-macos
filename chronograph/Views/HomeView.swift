@@ -20,6 +20,7 @@ struct HomeView: View {
                 VStack {
                     Text("Hello \(currentUser?.name ?? "Default")!")
                     OrganizationsView()
+                    LogoutButton()
                 }
             } else {
                 LoginView()

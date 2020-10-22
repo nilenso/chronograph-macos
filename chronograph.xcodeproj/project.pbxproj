@@ -20,6 +20,9 @@
 		1B024A68254171D800D067EF /* OrganizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F72825248EE200837F10 /* OrganizationAPI.swift */; };
 		1B024A70254171DE00D067EF /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F71B252488B400837F10 /* OrganizationsView.swift */; };
 		1B024A71254171DE00D067EF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7392524B3E400837F10 /* Model.xcdatamodeld */; };
+		1B024A842541951400D067EF /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B024A832541951400D067EF /* LogoutButton.swift */; };
+		1B024A8B25419F6600D067EF /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B024A832541951400D067EF /* LogoutButton.swift */; };
+		1B024A9325419F6D00D067EF /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B024A832541951400D067EF /* LogoutButton.swift */; };
 		2614DBD8250F4FB500598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
 		2614DBDA250F56E000598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
 		2614DBDC250F573E00598B48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2614DBDB250F573E00598B48 /* README.md */; };
@@ -88,6 +91,7 @@
 
 /* Begin PBXFileReference section */
 		1B0249F6253ECD5B00D067EF /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		1B024A832541951400D067EF /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
 		22B0CCB4423C4594A988CC6C /* Pods-chronographTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chronographTests.debug.xcconfig"; path = "Target Support Files/Pods-chronographTests/Pods-chronographTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2614DBD7250F4FB500598B48 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2614DBD9250F56E000598B48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -156,9 +160,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B024A822541950200D067EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1B024A832541951400D067EF /* LogoutButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		412EB69524F919F00083A9EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1B024A822541950200D067EF /* Components */,
 				2614DBD9250F56E000598B48 /* ContentView.swift */,
 				412EB6A624F95FC90083A9EC /* LoginView.swift */,
 				417FE77B2506C57C001ABC9B /* HomeView.swift */,
@@ -558,6 +571,7 @@
 				2614DBDA250F56E000598B48 /* ContentView.swift in Sources */,
 				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
 				4152F73B2524B3E400837F10 /* Model.xcdatamodeld in Sources */,
+				1B024A842541951400D067EF /* LogoutButton.swift in Sources */,
 				4152F7682524C1A900837F10 /* Organization.swift in Sources */,
 				41470B9A24F7871C009AF96B /* main.swift in Sources */,
 			);
@@ -567,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B024A8B25419F6600D067EF /* LogoutButton.swift in Sources */,
 				1B024A5A254170FF00D067EF /* Model.xcdatamodeld in Sources */,
 				1B024A4B254170A400D067EF /* OrganizationAPI.swift in Sources */,
 				1B024A472541707900D067EF /* Model.swift in Sources */,
@@ -592,6 +607,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B024A9325419F6D00D067EF /* LogoutButton.swift in Sources */,
 				1B024A70254171DE00D067EF /* OrganizationsView.swift in Sources */,
 				1B024A71254171DE00D067EF /* Model.xcdatamodeld in Sources */,
 				1B024A65254171D800D067EF /* Organization.swift in Sources */,
