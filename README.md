@@ -2,7 +2,7 @@
 Mac client for chronograph
 
 ## Development Requirements
-- Xcode 11.7
+- Xcode 12+
 
 ## Setup
 - clone this repository

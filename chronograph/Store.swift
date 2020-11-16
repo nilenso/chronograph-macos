@@ -14,11 +14,16 @@ class Store: ObservableObject {
 
     weak var presentationContext: ViewController!
 
-    var managedObjectContext: NSManagedObjectContext!
+    var managedObjectContext: NSManagedObjectContext! {
+        didSet {
+            startCoreDataSync()
+        }
+    }
 
-    var cancellable: AnyCancellable!
-
+    var fetchUserCancellable: AnyCancellable!
+    var fetchTimersCancellable: AnyCancellable!
     var fetchOrganizationsCancellable: AnyCancellable!
+    var syncCoreDataCancellable: AnyCancellable!
 
     init(appState: AppState) {
         self.appState = appState
@@ -29,6 +34,19 @@ class Store: ObservableObject {
         }
     }
 
+    func startCoreDataSync() {
+        syncCoreDataCancellable = NotificationCenter.default
+            .publisher(for: .NSManagedObjectContextDidSave, object: self.managedObjectContext)
+            .map { _ -> [Organization] in
+                let request: NSFetchRequest<OrganizationCD> = NSFetchRequest(entityName: "OrganizationCD")
+                try! print(self.managedObjectContext.fetch(request))
+                return try! self.managedObjectContext.fetch(request).map(Organization.init)
+            }.sink { organizations in
+                print(organizations)
+                self.appState.organizations = organizations
+            }
+    }
+        
     func credentials() -> AnyPublisher<Credentials?, Never> {
         return $appState
             .map(\.credentials)
@@ -92,7 +110,7 @@ class Store: ObservableObject {
         let authURL = URL(string: Config.loginPageURL())!
 
         let subject = CurrentValueSubject<String?, Never>(nil)
-        cancellable = subject
+        fetchUserCancellable = subject
             .compactMap {v in v}
             .receive(on: DispatchQueue.main)
             .map { accessToken in
@@ -142,10 +160,10 @@ class Store: ObservableObject {
         }
 
         let organizationApi = OrganizationApi.init(credentials: credentials)
-        cancellable = organizationApi.list().sink { result in
+        fetchOrganizationsCancellable = organizationApi.list().sink { result in
             switch result {
             case .failure(let error):
-                debugPrint("Error while fetching organizations", error.errorDescription)
+                debugPrint("Error while fetching organizations", error.errorDescription as Any)
             case .success(let organizations):
                 _ = try! Organization.removeAll(context: self.managedObjectContext, objects: [])
                 _ = try! Organization.batchInsert(
@@ -158,19 +176,56 @@ class Store: ObservableObject {
         }
     }
 
-    func organizations() -> AnyPublisher<[Organization], Never> {
-        fetchOrganizationsCancellable = NotificationCenter.default
-            .publisher(for: .NSManagedObjectContextDidSave, object: self.managedObjectContext)
-            .map { _ -> [Organization] in
-                let request: NSFetchRequest<OrganizationCD> = NSFetchRequest(entityName: "OrganizationCD")
-                try! print(self.managedObjectContext.fetch(request))
-                return try! self.managedObjectContext.fetch(request).map(Organization.init)
-            }.sink { organizations in
-                print(organizations)
-                self.appState.organizations = organizations
+    func getTimers() {
+        guard let credentials = self.appState.credentials else {
+            debugPrint("Missing access token when fetching timers")
+            return
+        }
+        
+        let timerApi = TimerAPI.init(credentials: credentials)
+        fetchTimersCancellable = timerApi.listByDate(recordedFor: Date()).sink {result in
+            switch result {
+            case .failure(let error):
+                debugPrint("Error while fetching timers", error)
+            case .success(let timersWithTasks):
+                self.appState.timers = timersWithTasks.map {timerWithTask in
+                    timerWithTask.withoutTask()
+                }
+                self.appState.tasks = timersWithTasks.map(\.task)
             }
+        }
+    }
+    
+    func organizations() -> AnyPublisher<[Organization], Never> {
+        
         return $appState
             .map(\.organizations)
+            .eraseToAnyPublisher()
+    }
+    
+    func timers() -> AnyPublisher<[Timer], Never> {
+        return $appState
+            .map(\.timers)
+            .eraseToAnyPublisher()
+    }
+    
+    func taskForTimer(timer: Timer) -> Task? {
+        self.appState.tasks.filter { task in
+            task.id == timer.taskID
+        }.first
+    }
+    
+    func timersForOrganizationID(orgID: Int) -> AnyPublisher<[Timer], Never> {
+        return $appState
+            .map(\.timers)
+            .map  { timersList in
+                timersList.filter { timer in
+                    guard let task = self.taskForTimer(timer: timer) else {
+                        return false
+                    }
+                    return task.organizationID == orgID
+                }
+            }
             .eraseToAnyPublisher()
     }
 }
