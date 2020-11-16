@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B0249F7253ECD5B00D067EF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0249F6253ECD5B00D067EF /* Credentials.swift */; };
 		1B024A332541703A00D067EF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0249F6253ECD5B00D067EF /* Credentials.swift */; };
-		1B024A3B2541704400D067EF /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F71B252488B400837F10 /* OrganizationsView.swift */; };
 		1B024A3F2541707300D067EF /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7672524C1A900837F10 /* Organization.swift */; };
 		1B024A472541707900D067EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F75B2524BE1700837F10 /* Model.swift */; };
 		1B024A4B254170A400D067EF /* OrganizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F72825248EE200837F10 /* OrganizationAPI.swift */; };
@@ -18,7 +17,6 @@
 		1B024A66254171D800D067EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F75B2524BE1700837F10 /* Model.swift */; };
 		1B024A67254171D800D067EF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0249F6253ECD5B00D067EF /* Credentials.swift */; };
 		1B024A68254171D800D067EF /* OrganizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F72825248EE200837F10 /* OrganizationAPI.swift */; };
-		1B024A70254171DE00D067EF /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F71B252488B400837F10 /* OrganizationsView.swift */; };
 		1B024A71254171DE00D067EF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7392524B3E400837F10 /* Model.xcdatamodeld */; };
 		1B024A842541951400D067EF /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B024A832541951400D067EF /* LogoutButton.swift */; };
 		1B024A8B25419F6600D067EF /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B024A832541951400D067EF /* LogoutButton.swift */; };
@@ -30,6 +28,21 @@
 		2614DBDE250F592D00598B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD9250F56E000598B48 /* ContentView.swift */; };
 		2614DBDF250F593200598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
 		2614DBE0250F593200598B48 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614DBD7250F4FB500598B48 /* Config.swift */; };
+		26E3F5652563C6C900C02E27 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3F5642563C6C900C02E27 /* Task.swift */; };
+		26E3F5662563C6C900C02E27 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3F5642563C6C900C02E27 /* Task.swift */; };
+		26E3F5672563C6C900C02E27 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3F5642563C6C900C02E27 /* Task.swift */; };
+		26FE37A1256276AE0083EE15 /* OrganizationSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37A0256276AE0083EE15 /* OrganizationSelect.swift */; };
+		26FE37A2256276AE0083EE15 /* OrganizationSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37A0256276AE0083EE15 /* OrganizationSelect.swift */; };
+		26FE37A3256276AE0083EE15 /* OrganizationSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37A0256276AE0083EE15 /* OrganizationSelect.swift */; };
+		26FE37A8256281810083EE15 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37A7256281810083EE15 /* Timer.swift */; };
+		26FE37A9256281810083EE15 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37A7256281810083EE15 /* Timer.swift */; };
+		26FE37AA256281810083EE15 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37A7256281810083EE15 /* Timer.swift */; };
+		26FE37AF25628F5D0083EE15 /* TimerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37AE25628F5D0083EE15 /* TimerAPI.swift */; };
+		26FE37B025628F5D0083EE15 /* TimerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37AE25628F5D0083EE15 /* TimerAPI.swift */; };
+		26FE37B125628F5D0083EE15 /* TimerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37AE25628F5D0083EE15 /* TimerAPI.swift */; };
+		26FE37B6256298D70083EE15 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37B5256298D70083EE15 /* TimeUtils.swift */; };
+		26FE37B7256298D70083EE15 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37B5256298D70083EE15 /* TimeUtils.swift */; };
+		26FE37B8256298D70083EE15 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE37B5256298D70083EE15 /* TimeUtils.swift */; };
 		412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB68924F7BE3C0083A9EC /* Application.swift */; };
 		412EB6A424F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
 		412EB6A524F94BB20083A9EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EB6A324F94BB20083A9EC /* User.swift */; };
@@ -45,7 +58,6 @@
 		414F62F4250A0F77006D3D43 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F62F1250A0516006D3D43 /* UserAPI.swift */; };
 		414F62F5250A0F7E006D3D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
 		414F62F6250A0F7E006D3D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A86A7724EE6BF5003EFC0F /* AppDelegate.swift */; };
-		4152F71C252488B400837F10 /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F71B252488B400837F10 /* OrganizationsView.swift */; };
 		4152F72925248EE200837F10 /* OrganizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F72825248EE200837F10 /* OrganizationAPI.swift */; };
 		4152F73B2524B3E400837F10 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4152F7392524B3E400837F10 /* Model.xcdatamodeld */; };
 		4152F75C2524BE1700837F10 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152F75B2524BE1700837F10 /* Model.swift */; };
@@ -96,6 +108,11 @@
 		2614DBD7250F4FB500598B48 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2614DBD9250F56E000598B48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2614DBDB250F573E00598B48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		26E3F5642563C6C900C02E27 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		26FE37A0256276AE0083EE15 /* OrganizationSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationSelect.swift; sourceTree = "<group>"; };
+		26FE37A7256281810083EE15 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		26FE37AE25628F5D0083EE15 /* TimerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAPI.swift; sourceTree = "<group>"; };
+		26FE37B5256298D70083EE15 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
 		412EB68924F7BE3C0083A9EC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		412EB6A324F94BB20083A9EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		412EB6A624F95FC90083A9EC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -103,7 +120,6 @@
 		41470B9924F7871C009AF96B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		41470B9B24F78CBB009AF96B /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		414F62F1250A0516006D3D43 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
-		4152F71B252488B400837F10 /* OrganizationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsView.swift; sourceTree = "<group>"; };
 		4152F72825248EE200837F10 /* OrganizationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationAPI.swift; sourceTree = "<group>"; };
 		4152F73A2524B3E400837F10 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4152F75B2524BE1700837F10 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -164,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				1B024A832541951400D067EF /* LogoutButton.swift */,
+				26FE37A0256276AE0083EE15 /* OrganizationSelect.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -175,7 +192,6 @@
 				2614DBD9250F56E000598B48 /* ContentView.swift */,
 				412EB6A624F95FC90083A9EC /* LoginView.swift */,
 				417FE77B2506C57C001ABC9B /* HomeView.swift */,
-				4152F71B252488B400837F10 /* OrganizationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +203,8 @@
 				412EB6A324F94BB20083A9EC /* User.swift */,
 				4152F75B2524BE1700837F10 /* Model.swift */,
 				1B0249F6253ECD5B00D067EF /* Credentials.swift */,
+				26FE37A7256281810083EE15 /* Timer.swift */,
+				26E3F5642563C6C900C02E27 /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +214,7 @@
 			children = (
 				414F62F1250A0516006D3D43 /* UserAPI.swift */,
 				4152F72825248EE200837F10 /* OrganizationAPI.swift */,
+				26FE37AE25628F5D0083EE15 /* TimerAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -241,6 +260,7 @@
 				41A86A7D24EE6BF5003EFC0F /* Preview Content */,
 				412EB69524F919F00083A9EC /* Views */,
 				4152F7392524B3E400837F10 /* Model.xcdatamodeld */,
+				26FE37B5256298D70083EE15 /* TimeUtils.swift */,
 			);
 			path = chronograph;
 			sourceTree = "<group>";
@@ -553,12 +573,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E3FEFA2500BE60003E586C /* AppState.swift in Sources */,
-				4152F71C252488B400837F10 /* OrganizationsView.swift in Sources */,
 				417FE77C2506C57C001ABC9B /* HomeView.swift in Sources */,
 				1B0249F7253ECD5B00D067EF /* Credentials.swift in Sources */,
 				412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */,
 				2614DBD8250F4FB500598B48 /* Config.swift in Sources */,
 				412EB6A724F95FC90083A9EC /* LoginView.swift in Sources */,
+				26FE37A1256276AE0083EE15 /* OrganizationSelect.swift in Sources */,
 				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
 				4133D0392506AC320005603F /* ViewController.swift in Sources */,
 				41E3FEFE2500BE9D003E586C /* Store.swift in Sources */,
@@ -566,13 +586,17 @@
 				4152F72925248EE200837F10 /* OrganizationAPI.swift in Sources */,
 				414F62F2250A0516006D3D43 /* UserAPI.swift in Sources */,
 				412EB68A24F7BE3C0083A9EC /* Application.swift in Sources */,
+				26FE37A8256281810083EE15 /* Timer.swift in Sources */,
 				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
 				4152F75C2524BE1700837F10 /* Model.swift in Sources */,
+				26FE37B6256298D70083EE15 /* TimeUtils.swift in Sources */,
 				2614DBDA250F56E000598B48 /* ContentView.swift in Sources */,
 				41A86A7824EE6BF5003EFC0F /* AppDelegate.swift in Sources */,
+				26FE37AF25628F5D0083EE15 /* TimerAPI.swift in Sources */,
 				4152F73B2524B3E400837F10 /* Model.xcdatamodeld in Sources */,
 				1B024A842541951400D067EF /* LogoutButton.swift in Sources */,
 				4152F7682524C1A900837F10 /* Organization.swift in Sources */,
+				26E3F5652563C6C900C02E27 /* Task.swift in Sources */,
 				41470B9A24F7871C009AF96B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,18 +605,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FE37A2256276AE0083EE15 /* OrganizationSelect.swift in Sources */,
 				1B024A8B25419F6600D067EF /* LogoutButton.swift in Sources */,
 				1B024A5A254170FF00D067EF /* Model.xcdatamodeld in Sources */,
 				1B024A4B254170A400D067EF /* OrganizationAPI.swift in Sources */,
 				1B024A472541707900D067EF /* Model.swift in Sources */,
 				1B024A3F2541707300D067EF /* Organization.swift in Sources */,
-				1B024A3B2541704400D067EF /* OrganizationsView.swift in Sources */,
 				1B024A332541703A00D067EF /* Credentials.swift in Sources */,
+				26FE37B7256298D70083EE15 /* TimeUtils.swift in Sources */,
+				26FE37B025628F5D0083EE15 /* TimerAPI.swift in Sources */,
 				41E3FEF7250035D8003E586C /* Application.swift in Sources */,
+				26FE37A9256281810083EE15 /* Timer.swift in Sources */,
 				412EB6A824F95FC90083A9EC /* LoginView.swift in Sources */,
 				2614DBDD250F592D00598B48 /* ContentView.swift in Sources */,
 				41E3FEFB2500BE60003E586C /* AppState.swift in Sources */,
 				4133D03A2506AC320005603F /* ViewController.swift in Sources */,
+				26E3F5662563C6C900C02E27 /* Task.swift in Sources */,
 				2614DBDF250F593200598B48 /* Config.swift in Sources */,
 				41470B9C24F78CBB009AF96B /* TestAppDelegate.swift in Sources */,
 				414F62F3250A0F76006D3D43 /* UserAPI.swift in Sources */,
@@ -607,18 +635,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FE37A3256276AE0083EE15 /* OrganizationSelect.swift in Sources */,
 				1B024A9325419F6D00D067EF /* LogoutButton.swift in Sources */,
-				1B024A70254171DE00D067EF /* OrganizationsView.swift in Sources */,
 				1B024A71254171DE00D067EF /* Model.xcdatamodeld in Sources */,
 				1B024A65254171D800D067EF /* Organization.swift in Sources */,
 				1B024A66254171D800D067EF /* Model.swift in Sources */,
 				1B024A67254171D800D067EF /* Credentials.swift in Sources */,
 				1B024A68254171D800D067EF /* OrganizationAPI.swift in Sources */,
+				26FE37B8256298D70083EE15 /* TimeUtils.swift in Sources */,
+				26FE37B125628F5D0083EE15 /* TimerAPI.swift in Sources */,
 				414F62F6250A0F7E006D3D43 /* AppDelegate.swift in Sources */,
+				26FE37AA256281810083EE15 /* Timer.swift in Sources */,
 				2614DBDE250F592D00598B48 /* ContentView.swift in Sources */,
 				41E3FEF6250035D5003E586C /* LoginView.swift in Sources */,
 				41E3FEF8250035D8003E586C /* Application.swift in Sources */,
 				41E3FEFC2500BE60003E586C /* AppState.swift in Sources */,
+				26E3F5672563C6C900C02E27 /* Task.swift in Sources */,
 				2614DBE0250F593200598B48 /* Config.swift in Sources */,
 				414F62F4250A0F77006D3D43 /* UserAPI.swift in Sources */,
 				417FE77E2506C57C001ABC9B /* HomeView.swift in Sources */,

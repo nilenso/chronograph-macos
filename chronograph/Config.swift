@@ -28,6 +28,10 @@ class Config {
     static func organizationsURL() -> String {
         return Config.serverURL() + "/api/organizations/"
     }
+    
+    static func timersURL() -> String {
+        return Config.serverURL() + "/api/timers"
+    }
 
     static func callbackURLScheme() -> String {
         return Config.lookupKey(key: "CALLBACK_URL_SCHEME") as! String
