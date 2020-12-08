@@ -3,7 +3,7 @@
 //  chronograph
 //
 //  Created by Govind krishna Joshi on 10/09/20.
-//  Copyright © 2020 nilenso. All rights reserved.
+
 //
 import Alamofire
 import Combine

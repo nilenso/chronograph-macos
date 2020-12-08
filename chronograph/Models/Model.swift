@@ -3,7 +3,7 @@
 //  chronograph
 //
 //  Created by Govind krishna Joshi on 30/09/20.
-//  Copyright © 2020 nilenso. All rights reserved.
+
 //
 
 import CoreData

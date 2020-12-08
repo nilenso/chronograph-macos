@@ -3,7 +3,7 @@
 //  chronograph
 //
 //  Created by Sandilya Jandhyala on 16/11/20.
-//  Copyright © 2020 nilenso. All rights reserved.
+
 //
 
 import SwiftUI

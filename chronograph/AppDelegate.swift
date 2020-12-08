@@ -3,7 +3,7 @@
 //  timetracker-macos
 //
 //  Created by Govind krishna Joshi on 18/08/20.
-//  Copyright © 2020 nilenso. All rights reserved.
+
 //
 import Cocoa
 import SwiftUI
